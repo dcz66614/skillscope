@@ -1,0 +1,26 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o16-shared-library-scope-leak",
+  "policy": {
+    "forbiddenScopes": [
+      "SHARED_LIBRARY"
+    ]
+  },
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "library",
+        "name": "every-docs",
+        "path": "./library/every-docs"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

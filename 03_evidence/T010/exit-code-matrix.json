@@ -1,0 +1,94 @@
+{
+  "schema": "skillscope.t010-exit-code-matrix/v1",
+  "entries": [
+    {
+      "case": "codex-fail",
+      "mode": "normal",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_status": "FAIL",
+      "stdout_lines": 8,
+      "report_written": true
+    },
+    {
+      "case": "codex-fail",
+      "mode": "ci",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "expected_status": "FAIL",
+      "stdout_lines": 1,
+      "stdout": "skillscope: RESULT=FAIL exit=1 report=/tmp/skillscope-t010-IEwQ0o/codex-fail.ci.json",
+      "report_written": true
+    },
+    {
+      "case": "claude-pass",
+      "mode": "normal",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_status": "PASS",
+      "stdout_lines": 6,
+      "report_written": true
+    },
+    {
+      "case": "claude-pass",
+      "mode": "ci",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "expected_status": "PASS",
+      "stdout_lines": 1,
+      "stdout": "skillscope: RESULT=PASS exit=0 report=/tmp/skillscope-t010-IEwQ0o/claude-pass.ci.json",
+      "report_written": true
+    },
+    {
+      "case": "openmausbot-incomplete",
+      "mode": "normal",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expected_status": "INCOMPLETE",
+      "stdout_lines": 5,
+      "report_written": true
+    },
+    {
+      "case": "openmausbot-incomplete",
+      "mode": "ci",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "expected_status": "INCOMPLETE",
+      "stdout_lines": 1,
+      "stdout": "skillscope: RESULT=INCOMPLETE exit=2 report=/tmp/skillscope-t010-IEwQ0o/openmausbot-incomplete.ci.json",
+      "report_written": true
+    },
+    {
+      "case": "missing-profile",
+      "mode": "ci",
+      "expected_exit": 3,
+      "actual_exit": 3,
+      "stdout_lines": 1,
+      "stdout": "skillscope: RESULT=ERROR exit=3"
+    },
+    {
+      "case": "unwritable-out",
+      "mode": "ci",
+      "expected_exit": 4,
+      "actual_exit": 4,
+      "stdout_lines": 1,
+      "stdout": "skillscope: RESULT=ERROR exit=4"
+    },
+    {
+      "case": "ci-on-init",
+      "mode": "ci",
+      "expected_exit": 3,
+      "actual_exit": 3,
+      "stdout_lines": 0,
+      "stdout": ""
+    },
+    {
+      "case": "unknown-flag",
+      "mode": "ci",
+      "expected_exit": 3,
+      "actual_exit": 3,
+      "stdout_lines": 0,
+      "stdout": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "extraKnownMarketplaces": [
+    {
+      "name": "remote-market",
+      "source": {
+        "type": "git",
+        "url": "https://example.invalid/market.git"
+      }
+    }
+  ]
+}

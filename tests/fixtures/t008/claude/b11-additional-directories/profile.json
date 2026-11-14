@@ -1,0 +1,43 @@
+{
+  "cwd": ".",
+  "profileId": "b11-additional-directories",
+  "homeDir": "./home",
+  "repoDir": "./repo",
+  "managedSettingsPath": "./enterprise/managed-settings.json",
+  "userSettingsPath": "./home/.claude/settings.json",
+  "projectSettingsPath": "./repo/.claude/settings.json",
+  "sourceRoots": [
+    {
+      "sourceRootId": "enterprise",
+      "scope": "ENTERPRISE",
+      "path": "./enterprise/.claude/skills",
+      "required": true
+    },
+    {
+      "sourceRootId": "personal",
+      "scope": "PERSONAL",
+      "path": "./home/.claude/skills",
+      "required": true
+    },
+    {
+      "sourceRootId": "project",
+      "scope": "PROJECT",
+      "path": "./repo/.claude/skills",
+      "required": true
+    },
+    {
+      "sourceRootId": "nested",
+      "scope": "NESTED",
+      "path": "./repo/sub/.claude/skills",
+      "required": true,
+      "visited": true
+    },
+    {
+      "sourceRootId": "plugin-acme",
+      "scope": "PLUGIN",
+      "path": "./plugin-acme",
+      "required": true,
+      "pluginName": "acme"
+    }
+  ]
+}

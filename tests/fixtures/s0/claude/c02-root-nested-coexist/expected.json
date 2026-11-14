@@ -1,0 +1,23 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "SAME_NAME_COLLISION"
+  ],
+  "instances": [
+    {
+      "logicalName": "deploy",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "deploy",
+      "sourceScope": "NESTED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,19 @@
+{
+  "cwd": ".",
+  "profileId": "c03-plugin-namespace",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./plugin-acme",
+      "pluginName": "acme",
+      "required": true,
+      "scope": "PLUGIN",
+      "sourceRootId": "plugin-acme"
+    }
+  ]
+}

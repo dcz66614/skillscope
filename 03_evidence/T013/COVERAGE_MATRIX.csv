@@ -1,0 +1,124 @@
+file,category,status,notes
+01_spec/PROJECT_BOOK.md,spec,READ,全文；§4.1/§4.2/§4.3/§4.4/§5.2/§6/§10.3 逐条对照实现
+01_spec/IMPLEMENTATION_PLAN.md,spec,READ,全文；§5 T013 卡、§3.3 脚本表、§6 S0 硬门、T014 卡已核对；三处出入见 PACK_01 §2
+00_control/DECISION_LOG.md,control,READ,全文；ADR-001–ADR-017 逐条核对
+00_control/TASK_BOARD.csv,control,READ,全文；T001–T012 PASS、T013 READY、T014 BLOCKED
+00_control/PROJECT_STATE.json,control,READ,全文；S4_T012_PASS；gate sha 与实测一致
+00_control/ENVIRONMENT_REPORT.md,control,READ,全文；一处历史 mojibake 备注
+00_control/P023_SPEC_VERIFICATION.md,control,READ,规格验证记录
+docs/host-rules.md,docs,READ,全文；三宿主规则逐条对照行为；Codex 失效配置已实测
+docs/quickstart.md,docs,READ,全文；首审计 INCOMPLETE 说明与探针实测一致
+README.md,docs,READ,全文；退出码表、finding 列表、边界声明与实测一致
+.github/workflows/skillscope.yml,config,READ,全文；只调用本地 CLI
+schemas/skillscope-profile-v1.json,config,READ,全文；含 forbidden_scopes；与 contracts 接口漂移见 P2-T013-05
+schemas/skillscope-report-v1.json,config,READ,全文；$id skillscope.report/v1
+schemas/skillscope-audit-result-v1.json,config,READ,全文；$id skillscope.audit-result/v1
+schemas/README.md,config,READ,全文；OMB snapshot 只引用不复制
+src/resolver/index.ts,core,READ,全文；kernel 入口；ADR-005/006 实现
+src/policy/index.ts,core,READ,全文；有效集=ELIGIBLE；策略规范化 fail-closed
+src/findings/index.ts,core,READ,全文；finding 目录与分级
+src/canonical/index.ts,core,READ,全文；ADR-011/015；NFC 碰撞 fail-closed
+src/contracts/index.ts,core,READ,全文；ProfileV1 接口漂移见 P2-T013-05
+src/identity/identity.ts,core,READ,全文；registry 键 (sourceRootId canonicalPath)
+src/identity/source-graph.ts,core,READ,全文
+src/discovery/discovery.ts,core,READ,全文；有界遍历；symlink 各分支
+src/manifest/manifest.ts,core,READ,全文；保留词拒绝；INVALID 保留
+src/io/index.ts,core,READ,全文；schema 子集校验器；loadSnapshot
+src/privacy/index.ts,core,READ,全文；ADR-012 redaction
+src/report/index.ts,core,READ,全文；报告哈希；HTML 内嵌 JSON；外部资源扫描
+src/cli/audit.ts,core,READ,全文；policy 必传 kernel；redactReport 后写盘
+src/cli/index.ts,core,READ,全文
+src/cli/init.ts,core,READ,全文；只写合成 home
+src/cli/verify.ts,core,READ,全文；verify --fixtures s0
+src/adapters/codex/codex-poc.ts,core,READ,全文；五源；selector；fail-closed；跨根归并见 P2-T013-06；无保留词规则见 P2-T013-07
+src/adapters/codex/README.md,core,READ,全文；规则来源表；4 项文档化简化
+src/adapters/claude/claude-poc.ts,core,READ,全文；localeCompare 排序见 P2-T013-01
+src/adapters/claude/adapter.ts,core,READ,全文；policy 透传；sanitizeDetail；dedupeRootIds 见 P2-T013-09
+src/adapters/claude/marketplace.ts,core,READ,全文；skipped 死记账见 P2-T013-09
+src/adapters/claude/settings.ts,core,READ,全文；四层合并；ADR-009/010
+src/adapters/claude/rules.ts,core,READ,全文；与 claude-rules.json 镜像（测试断言）
+src/adapters/claude/claude-rules.json,core,READ,全文；skillscope.claude-rules/v1
+src/adapters/claude/index.ts,core,READ,全文
+src/adapters/shared/skill-scan.ts,core,READ,全文；parseFrontmatter 无保留词规则见 P2-T013-07
+src/adapters/openmausbot/openmausbot-poc.ts,core,READ,全文；unknownScopes 重复见 P2-T013-04；绝对路径 detail 见 P2-T013-03；localeCompare 见 P2-T013-01
+src/adapters/openmausbot/adapter.ts,core,READ,全文；policy 两分支透传；sortedUnique 去重；未 sanitize 见 P2-T013-03
+src/adapters/openmausbot/snapshot.ts,core,READ,全文；与 snapshot schema 镜像（测试断言）
+src/adapters/openmausbot/openmausbot-snapshot-v1.json,core,READ,全文（结构核对）；$id openmausbot-snapshot/v1
+src/adapters/openmausbot/index.ts,core,READ,全文
+oracle/python/reference_resolver.py,oracle,READ,全文；仅标准库；独立重写
+oracle/python/canonical.py,oracle,READ,全文；sha 带尾 LF 约定见 P2-T013-02
+oracle/python/__init__.py,oracle,READ,空包标记
+oracle/tests/test_canonical.py,oracle,READ,全文；sha 钉在带 LF 字节上
+oracle/tests/test_reference_resolver.py,oracle,RUN,经 npm run test:oracle 全过（42 测试）；未逐行读
+scripts/s0-gate.mjs,script,READ,全文；8 步 gate；SKILLSCOPE_GATE_NO_REBUILD 仅测试用
+scripts/s0-run.mjs,script,READ,全文；repeatGate 100 次
+scripts/s0-canonical.mjs,script,READ,全文；UTF-16 码元排序 + 带 LF 哈希见 P2-T013-02
+scripts/verify-all.mjs,script,READ,全文；8 步聚合；真实 license inventory
+scripts/e2e.mjs,script,READ,全文；28 检查
+scripts/offline-check.mjs,script,READ,全文；四项独立检查
+scripts/performance.mjs,script,READ,全文；500 实例；/proc VmHWM；无 /proc 不静默通过
+scripts/perf-fixture.mjs,script,READ,全文；确定性 500 实例生成器
+scripts/perf-fixture.d.mts,script,READ,类型声明
+scripts/build-lock.mjs,script,READ,全文；原子 mkdir 锁；stale-steal TOCTOU 见 P2-T013-10
+scripts/build-lock.d.mts,script,READ,类型声明
+scripts/release-rehearsal.mjs,script,READ,全文；T014 预演；23 个 .gitkeep 核查
+scripts/repeat-hash.mjs,script,READ,全文
+scripts/demo.mjs,script,READ,全文；失败路径均 exit 1
+scripts/env/probe.mjs,script,READ,全文；T001 只读探测
+scripts/hash-privacy-evidence.mjs,script,READ,全文；三方向量对照；PII 不记值
+scripts/identity-evidence.mjs,script,READ,全文；11 条不变量
+scripts/t010-evidence.mjs,script,READ,全文；退出码矩阵实测
+scripts/t011-evidence.mjs,script,READ,全文；真实输出解析
+scripts/py-canonical-check.py,script,READ,全文；独立 Python 实现；与 TS 一致
+scripts/release-build.mjs,script,NOT_READ,文件不存在（T014 交付物）；package.json 声明见 P2-T013-08
+scripts/release-verify.mjs,script,NOT_READ,文件不存在（T014 交付物）；package.json 声明见 P2-T013-08
+package.json,config,READ,全文；仅 2 运行时依赖；脚本表已核对
+package-lock.json,config,READ,结构核对；smol-toml 1.9.1 / yaml 2.9.1 / typescript 5.9.3 / vitest 5.1.0 精确锁定
+tsconfig.json,config,READ,全文；strict；NodeNext
+tsconfig.build.json,config,READ,全文；只含 src
+vitest.config.ts,config,READ,全文；仅 globalSetup
+tests/golden/runner.ts,test,READ,全文；投影逻辑对称；策略 detail 两侧置 null
+tests/golden/s0-golden.test.ts,test,RUN,经全量套件通过；未逐行读；T011 报告 §3 描述与 runner 一致
+tests/golden/oracle-parity.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/golden/extended-golden.test.ts,test,RUN,经全量套件通过；未逐行读；期望值声明手算
+tests/golden/s0/expected.json,test,GATE_VALIDATED,48 结果；经 gate 与 golden 测试逐字段比较；未逐行读
+tests/golden/extended/expected.json,test,RUN,13 手工用例期望值；经测试通过；未逐行读
+tests/property/seed.ts,test,RUN,经 test:property 通过；未逐行读
+tests/property/properties.test.ts,test,RUN,经全量套件通过（P1–P10）；未逐行读
+tests/mutation/mutations.json,test,RUN,20 变异定义；T011 证据 20/20；本轮未重跑全量 mutation
+tests/helpers/global-setup.ts,test,READ,全文；套件开始前构建一次 dist
+tests/helpers/test-infra.ts,test,READ,全文；checkoutS0（index.lock 重试）
+tests/claude/rules.test.ts,test,READ,全文；镜像一致性断言
+tests/openmausbot/snapshot.test.ts,test,READ,全文（结构核对）；schema 一致性断言
+tests/ci/ci.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/cli/cli.test.ts,test,RUN,经全量套件通过；未逐行读；SKILLSCOPE_GATE_NO_REBUILD 作用域已核对
+tests/codex/codex-poc.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/claude/adapter.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/claude/claude-poc.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/claude/settings.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/contracts/contracts.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/e2e/e2e.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/hash/hash.test.ts,test,RUN,经全量套件通过；含 T011 回归 2 测试
+tests/identity/identity.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/identity/source-graph.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/io/io.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/manifest/manifest.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/offline/offline.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/openmausbot/adapter.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/openmausbot/openmausbot-poc.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/performance/performance.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/privacy/privacy.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/rules/findings.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/rules/policy.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/rules/resolver.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/symlink/symlink.test.ts,test,RUN,经全量套件通过；未逐行读
+tests/fixtures/s0/manifest.json,test,GATE_VALIDATED,48 夹具清单（24 control / 24 planted；16/宿主）；结构已核对
+tests/fixtures/s0/*,test,GATE_VALIDATED,48 夹具全部经 gate（生产 + Oracle + golden 三方）验证；未逐个逐行读
+tests/fixtures/demo/*,test,RUN,三 demo 经 e2e/offline/demo 路径验证；未逐个逐行读
+tests/fixtures/t007/*,test,RUN,经全量套件通过；未逐个逐行读
+tests/fixtures/t008/*,test,RUN,经全量套件通过；未逐个逐行读
+tests/fixtures/t008b/*,test,RUN,经 hash-privacy 证据与全量套件通过；canonical-vectors.json 结构已核对
+docs/images/scope-matrix.png,docs,NOT_READ,二进制图片；非代码；README 仅作示意引用
+03_evidence/T011/T011_REPORT.md,evidence,READ,全文；验收数字与本轮重跑对照
+03_evidence/T012/T012_REPORT.md,evidence,READ,全文；两处修复的描述与代码/提交对照
+03_evidence/T012/verify-all.json,evidence,READ,本轮重跑后读取（8/8 步骤）；后按惯例恢复为 T012 原样

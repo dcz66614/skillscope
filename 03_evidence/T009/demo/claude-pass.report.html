@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SkillScope report — claude-demo-pass — PASS</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a1a}
+h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:2rem}
+.status{padding:.75rem 1rem;border-radius:.5rem;font-weight:700}
+.status-PASS{background:#e6f4ea}.status-FAIL{background:#fce8e6}.status-INCOMPLETE{background:#fef7e0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{background:#f2f2f2}.sub{color:#555;font-size:.85em}.mono{font-family:monospace}
+td.unknown{background:#fef7e0}td.empty{color:#888}
+dl{display:grid;grid-template-columns:12rem 1fr;gap:.25rem 1rem}dt{font-weight:700}dd{margin:0;font-family:monospace;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<h1>SkillScope audit report</h1>
+<p>Profile <strong>claude-demo-pass</strong> · Engine <strong>claude-code</strong></p>
+<div class="status status-PASS">RESULT: PASS — all required sources enumerated; expected set matches policy; no confirmed deviations</div>
+<h2>Scope matrix</h2>
+<p>Bot × source scope: instance counts per source scope, as reported by the resolver. Unknown scopes were not enumerated and are never shown as empty.</p>
+<table>
+<thead><tr><th>Bot / Session Profile</th></tr></thead>
+<tbody><tr><td>claude-code / claude-demo-pass</td></tr></tbody>
+</table>
+<h2>Coverage</h2>
+<p>Enumerated sources: <strong>2</strong> of <strong>2</strong> required. Unknown scopes: <strong>none</strong>. Policy applied: <strong>yes</strong> (effective 2, expected 2, violations 0).</p>
+<h2>Findings (0)</h2>
+<table>
+<thead><tr><th>Finding</th><th>Severity</th><th>Scope</th><th>Status</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td colspan="5">No findings.</td></tr>
+</tbody>
+</table>
+<h2>Skill instances (2)</h2>
+<table>
+<thead><tr><th>Instance</th><th>Logical name</th><th>Scope</th><th>Relative path</th><th>Status</th><th>Content SHA-256</th></tr></thead>
+<tbody>
+<tr><td>personal:personal-skill/SKILL.md</td><td>personal-skill</td><td>PERSONAL</td><td>personal-skill/SKILL.md</td><td>ELIGIBLE</td><td class="mono">d2d34dc09068…</td></tr>
+<tr><td>project:project-skill/SKILL.md</td><td>project-skill</td><td>PROJECT</td><td>project-skill/SKILL.md</td><td>ELIGIBLE</td><td class="mono">a265012a0362…</td></tr>
+</tbody>
+</table>
+<h2>Hashes</h2>
+<dl>
+<dt>audit_sha256</dt><dd>fd386268c28e1899484be48badd7c6a1256f2849c4fa903c617250405ecf9470</dd>
+<dt>inventory_sha256</dt><dd>eb0ed32da3e3c9ef95e643431c5e82c2e0b3bcc5dfc0ac8962aeec73da5ad503</dd>
+<dt>oracle_result_sha256</dt><dd>null (not run — the CLI never executes the Python Oracle)</dd>
+<dt>expected_count</dt><dd>2</dd>
+<dt>observed_count</dt><dd>2</dd>
+</dl>
+<script type="application/json" id="skillscope-report">{"audit_sha256":"fd386268c28e1899484be48badd7c6a1256f2849c4fa903c617250405ecf9470","coverage":{"enumerated_sources":2,"required_sources":2},"expected_count":2,"findings":[],"inventory_sha256":"eb0ed32da3e3c9ef95e643431c5e82c2e0b3bcc5dfc0ac8962aeec73da5ad503","observed_count":2,"oracle_result_sha256":null,"profile_id":"claude-demo-pass","schema":"skillscope.report/v1","status":"PASS"}</script>
+</body>
+</html>

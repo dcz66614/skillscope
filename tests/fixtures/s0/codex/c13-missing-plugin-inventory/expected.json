@@ -1,0 +1,54 @@
+{
+  "caseId": "c13-missing-plugin-inventory",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 4,
+    "requiredSources": 5
+  },
+  "findings": [
+    {
+      "detail": "PLUGIN source could not be enumerated; absence is not evidence of absence",
+      "id": "SOURCE_NOT_ENUMERATED",
+      "severity": "P1",
+      "sourceScope": "PLUGIN",
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/release/SKILL.md",
+      "canonicalPathHash": "c23835b432702343a75f7692f7057f63646a1b96412db8bc918d7cad264b5a95",
+      "contentSha256": "30449c51ad2fd02dd9d2483114079b7c59fb24271177c9ac511b2e490d33a56d",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "release",
+      "instanceId": "codex:repo:repo/.agents/skills/release/SKILL.md",
+      "logicalName": "release",
+      "manifestName": "release",
+      "relativePath": ".agents/skills/release/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "ELIGIBLE"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "home/.agents/skills/personal/SKILL.md",
+      "canonicalPathHash": "12afb9922219f479c77808c31fb31f09e809c1085c51a638afc7dc9adc857191",
+      "contentSha256": "122d5b501c1a55f8093f327e11df4f0fb25b5631b49bfed98a0cda6b600bdcba",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "personal",
+      "instanceId": "codex:user:home/.agents/skills/personal/SKILL.md",
+      "logicalName": "personal",
+      "manifestName": "personal",
+      "relativePath": ".agents/skills/personal/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE",
+  "unknownSources": [
+    "PLUGIN"
+  ]
+}

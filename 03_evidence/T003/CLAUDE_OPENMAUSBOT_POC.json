@@ -1,0 +1,646 @@
+{
+  "task": "T003",
+  "specVersion": "1.0.0",
+  "generatedBy": "tmp dump script against dist build (not a product artifact)",
+  "fixtures": [
+    {
+      "fixtureId": "c01-basic",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "ent-admin|ENTERPRISE|ELIGIBLE",
+          "my-notes|PERSONAL|ELIGIBLE",
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 3,
+          "requiredSources": 3,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "ent-admin|ENTERPRISE|ELIGIBLE",
+          "my-notes|PERSONAL|ELIGIBLE",
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 3,
+          "requiredSources": 3,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c02-root-nested-coexist",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "deploy|NESTED|ELIGIBLE",
+          "deploy|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "deploy|NESTED|ELIGIBLE",
+          "deploy|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c03-plugin-namespace",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "acme:deploy|PLUGIN|ELIGIBLE",
+          "deploy|PROJECT|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "acme:deploy|PLUGIN|ELIGIBLE",
+          "deploy|PROJECT|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c04-adddir-and-sync",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "helper|ADD_DIR|ELIGIBLE",
+          "synced-docs|ACCOUNT_SYNC|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "helper|ADD_DIR|ELIGIBLE",
+          "synced-docs|ACCOUNT_SYNC|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c05-name-override-blast",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "deploy|PERSONAL|DISABLED",
+          "deploy|PROJECT|DISABLED"
+        ],
+        "findings": [
+          "NAME_SELECTOR_BLAST_RADIUS",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "deploy|PERSONAL|DISABLED",
+          "deploy|PROJECT|DISABLED"
+        ],
+        "findings": [
+          "NAME_SELECTOR_BLAST_RADIUS",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c06-sync-unenumerated",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SOURCE_NOT_ENUMERATED"
+        ],
+        "status": "INCOMPLETE",
+        "coverage": {
+          "enumeratedSources": 1,
+          "requiredSources": 2,
+          "unknownScopes": [
+            "ACCOUNT_SYNC"
+          ]
+        }
+      },
+      "actual": {
+        "instances": [
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SOURCE_NOT_ENUMERATED"
+        ],
+        "status": "INCOMPLETE",
+        "coverage": {
+          "enumeratedSources": 1,
+          "requiredSources": 2,
+          "unknownScopes": [
+            "ACCOUNT_SYNC"
+          ]
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c07-nested-scope-leak",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "internal-tool|NESTED|ELIGIBLE",
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SCOPE_LEAK"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "internal-tool|NESTED|ELIGIBLE",
+          "release|PROJECT|ELIGIBLE"
+        ],
+        "findings": [
+          "SCOPE_LEAK"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "c08-invalid-manifest",
+      "engine": "claude-code",
+      "expected": {
+        "instances": [
+          "broken|PROJECT|INVALID"
+        ],
+        "findings": [
+          "INVALID_MANIFEST"
+        ],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 1,
+          "requiredSources": 1,
+          "unknownScopes": []
+        }
+      },
+      "actual": {
+        "instances": [
+          "broken|PROJECT|INVALID"
+        ],
+        "findings": [
+          "INVALID_MANIFEST"
+        ],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 1,
+          "requiredSources": 1,
+          "unknownScopes": []
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o01-optout",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "every-deploy|SHARED_LIBRARY|DISCOVERED",
+          "every-docs|SHARED_LIBRARY|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": true
+        }
+      },
+      "actual": {
+        "instances": [
+          "every-deploy|SHARED_LIBRARY|DISCOVERED",
+          "every-docs|SHARED_LIBRARY|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o02-user-skills-on",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|DISCOVERED",
+          "my-notes|USER|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": true,
+          "configSource": "file",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|DISCOVERED",
+          "my-notes|USER|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": true,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o03-no-config-defaults",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|DISCOVERED",
+          "my-notes|USER|DISCOVERED",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "defaults",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|DISCOVERED",
+          "my-notes|USER|DISCOVERED",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "defaults"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o04-imported-clean",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "release|BOT_ASSIGNED|ELIGIBLE",
+          "rex|IMPORTED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "release|BOT_ASSIGNED|ELIGIBLE",
+          "rex|IMPORTED|ELIGIBLE"
+        ],
+        "findings": [],
+        "status": "PASS",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o05-optout-corrupt",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "FAIL_OPEN_CONFIG"
+        ],
+        "status": "INCOMPLETE",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": [
+            "SHARED_LIBRARY"
+          ]
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": true
+        }
+      },
+      "actual": {
+        "instances": [
+          "every-docs|SHARED_LIBRARY|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "FAIL_OPEN_CONFIG"
+        ],
+        "status": "INCOMPLETE",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": [
+            "SHARED_LIBRARY"
+          ]
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o06-imported-original-active",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "release|BOT_ASSIGNED|ELIGIBLE",
+          "rex|IMPORTED|DISABLED",
+          "rex|IMPORTED|ELIGIBLE"
+        ],
+        "findings": [
+          "IMPORT_ORIGINAL_PATH_STILL_ACTIVE",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "release|BOT_ASSIGNED|ELIGIBLE",
+          "rex|IMPORTED|DISABLED",
+          "rex|IMPORTED|ELIGIBLE"
+        ],
+        "findings": [
+          "IMPORT_ORIGINAL_PATH_STILL_ACTIVE",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o07-native-name-blast",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "deploy|REPO|DISABLED",
+          "deploy|SYSTEM|DISABLED",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "NAME_SELECTOR_BLAST_RADIUS",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "deploy|REPO|DISABLED",
+          "deploy|SYSTEM|DISABLED",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "NAME_SELECTOR_BLAST_RADIUS",
+          "SAME_NAME_COLLISION"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    },
+    {
+      "fixtureId": "o08-plugin-no-switch",
+      "engine": "openmausbot",
+      "expected": {
+        "instances": [
+          "openai-curated-remote:sites|PLUGIN|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "SCOPE_LEAK"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "configSource": "file",
+          "skillsLibrary": false
+        }
+      },
+      "actual": {
+        "instances": [
+          "openai-curated-remote:sites|PLUGIN|ELIGIBLE",
+          "release|BOT_ASSIGNED|ELIGIBLE"
+        ],
+        "findings": [
+          "SCOPE_LEAK"
+        ],
+        "status": "FAIL",
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      },
+      "match": true
+    }
+  ],
+  "summary": {
+    "total": 16,
+    "matched": 16,
+    "allMatched": true
+  }
+}

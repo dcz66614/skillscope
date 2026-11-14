@@ -1,0 +1,23 @@
+{
+  "cwd": ".",
+  "profileId": "c13-enterprise-scope-leak",
+  "policy": {
+    "forbiddenScopes": [
+      "ENTERPRISE"
+    ]
+  },
+  "sourceRoots": [
+    {
+      "path": "./enterprise",
+      "required": true,
+      "scope": "ENTERPRISE",
+      "sourceRootId": "enterprise"
+    },
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    }
+  ]
+}

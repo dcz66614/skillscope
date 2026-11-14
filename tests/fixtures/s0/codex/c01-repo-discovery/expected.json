@@ -1,0 +1,59 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c01-repo-discovery",
+  "status": "PASS",
+  "skills": [
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/release/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/release/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/release/SKILL.md",
+      "logicalName": "release",
+      "folderName": "release",
+      "manifestName": "release",
+      "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+      "canonicalPathHash": "c23835b432702343a75f7692f7057f63646a1b96412db8bc918d7cad264b5a95",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:repo:repo/a/.agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "a/.agents/skills/deploy/SKILL.md",
+      "canonicalPath": "repo/a/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "folderName": "deploy",
+      "manifestName": "deploy",
+      "contentSha256": "4b12232c906a6a6abc850125aafd2850815e5e6822e8fa141ace6ff473759f09",
+      "canonicalPathHash": "f1b3adb595e298e7dde1365af15eb2484761ad9b5a4edddd8296212016ff31e1",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:repo:repo/a/b/.agents/skills/notify/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "a/b/.agents/skills/notify/SKILL.md",
+      "canonicalPath": "repo/a/b/.agents/skills/notify/SKILL.md",
+      "logicalName": "notify",
+      "folderName": "notify",
+      "manifestName": "notify",
+      "contentSha256": "5b974808a73a7dddb63888b3c72ae1f6f6b9fbe9a1698c8d3c8fd82b81c86499",
+      "canonicalPathHash": "f8ee6157feecb4bffe036e019db5caa7e8744084c328997d4ca405d01a5dc6fa",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [],
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "unknownSources": [],
+  "configReadable": true
+}

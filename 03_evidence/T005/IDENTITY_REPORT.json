@@ -1,0 +1,225 @@
+{
+  "schema": "skillscope.identity-report/v1",
+  "task": "T005",
+  "specVersion": "1.0.0",
+  "tree": "<EVIDENCE_ROOT>",
+  "summary": {
+    "discoveredSkills": 7,
+    "instances": 6,
+    "aliases": 1,
+    "sameNameCollisions": 2,
+    "duplicateContentGroups": 1,
+    "skipped": 5,
+    "invalidInstances": 1
+  },
+  "instances": [
+    {
+      "instanceId": "8431cc586e90c8d3cae4f0d6c403ac737a66a0cf9266d84b3c6f586f4bf67c2b",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "Deploy/SKILL.md",
+      "canonicalPathHash": "53e3c2bc063c62e9a903b6c782b5ef51fb6b5ceba390eb5e7d490c6df4a3ca60",
+      "logicalName": "deploy",
+      "folderName": "Deploy",
+      "manifestName": "deploy",
+      "contentSha256": "9271a2b3960663ac7bb0a10a1f502790ef51a26a058c0c495be6b8f72560150f",
+      "status": "ELIGIBLE",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": []
+    },
+    {
+      "instanceId": "0b0858fd7c21852b26996c390fa21dedf3879f4e92b400a78d1a7791f935092d",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "alias/SKILL.md",
+      "canonicalPathHash": "e8b64a34dad0babe23d74b35def448f11bfab3a4dec9f2d5b34870fa90587ff4",
+      "logicalName": "release",
+      "folderName": "alias",
+      "manifestName": "release",
+      "contentSha256": "8619a35cc3813947ff4d6c318f61eb9a1bbed7ea6f865ea419206448a0564241",
+      "status": "ELIGIBLE",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": [
+        "release/SKILL.md"
+      ]
+    },
+    {
+      "instanceId": "b645a3779d40a54e4d153f3ef779f0f24110a9bf7698cb2c0fa556d9bd56f922",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "bad/SKILL.md",
+      "canonicalPathHash": "446c8f69d117af39ab614327474ae353aba91a469fbcec4c948c5919349e5c4c",
+      "logicalName": "bad",
+      "folderName": "bad",
+      "contentSha256": "22f65479e873b2b0b72fa7580c2c357d9a9ea5f334af7aa52b4a04cfb5424cd0",
+      "status": "INVALID",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": []
+    },
+    {
+      "instanceId": "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "copy-a/SKILL.md",
+      "canonicalPathHash": "46cc372f46631945e2d3a3847d4f8b89768ca71f38e50b0623c83af30d18ffed",
+      "logicalName": "copy-shared",
+      "folderName": "copy-a",
+      "manifestName": "copy-shared",
+      "contentSha256": "61985ebea1ef7ba4d15d3ab06f861c0c268a49698027a3b61b4e4b46619cae2d",
+      "status": "ELIGIBLE",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": []
+    },
+    {
+      "instanceId": "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "copy-b/SKILL.md",
+      "canonicalPathHash": "a68cac287a8aa101e7acafde0d0e31ff68b11dbfc4f498b9038952da1817258f",
+      "logicalName": "copy-shared",
+      "folderName": "copy-b",
+      "manifestName": "copy-shared",
+      "contentSha256": "61985ebea1ef7ba4d15d3ab06f861c0c268a49698027a3b61b4e4b46619cae2d",
+      "status": "ELIGIBLE",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": []
+    },
+    {
+      "instanceId": "22a4c0115ae0bca62d516f5407e2e780092b208d8c4dbabebe8aa88ae77b68b0",
+      "engine": "codex",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "deploy/SKILL.md",
+      "canonicalPathHash": "f74c909064e662c122afdfb35c8f9dcd98d3ffca1d0533d2f01b8812f0089077",
+      "logicalName": "deploy",
+      "folderName": "deploy",
+      "manifestName": "deploy",
+      "contentSha256": "ff8b2abf4ddf8d9ac48d65d41b9440d37252bc457754c55b985b6d8bab73e90c",
+      "status": "ELIGIBLE",
+      "evidenceLevel": "STATIC_RULE",
+      "aliases": []
+    }
+  ],
+  "sameNameCollisions": [
+    {
+      "logicalName": "copy-shared",
+      "instanceIds": [
+        "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+        "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d"
+      ]
+    },
+    {
+      "logicalName": "deploy",
+      "instanceIds": [
+        "22a4c0115ae0bca62d516f5407e2e780092b208d8c4dbabebe8aa88ae77b68b0",
+        "8431cc586e90c8d3cae4f0d6c403ac737a66a0cf9266d84b3c6f586f4bf67c2b"
+      ]
+    }
+  ],
+  "duplicateContentGroups": [
+    {
+      "contentSha256": "61985ebea1ef7ba4d15d3ab06f861c0c268a49698027a3b61b4e4b46619cae2d",
+      "instanceIds": [
+        "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+        "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "path": "big/SKILL.md",
+      "reason": "SKILL_MD_TOO_LARGE"
+    },
+    {
+      "path": "esc",
+      "reason": "SYMLINK_OUTSIDE_ROOT"
+    },
+    {
+      "path": "ghost",
+      "reason": "CANONICAL_PATH_UNRESOLVABLE"
+    },
+    {
+      "path": "loop/back",
+      "reason": "SYMLINK_LOOP"
+    },
+    {
+      "path": "weird/SKILL.md",
+      "reason": "SKILL_MD_UNREADABLE"
+    }
+  ],
+  "discoveryStats": {
+    "entriesVisited": 22,
+    "dirsVisited": 11,
+    "filesRead": 7,
+    "maxDepthReached": 1,
+    "stoppedByLimit": false
+  },
+  "sourceGraphSha256": "280693172898e669828b8ec2f517d69579aa4111c585eb6df822d6028d2d6eb6",
+  "invariants": [
+    {
+      "label": "discovered skills == 7 (deploy, Deploy, release, alias, copy-a, copy-b, bad)",
+      "ok": true
+    },
+    {
+      "label": "instances == 6 (alias merges into release)",
+      "ok": true
+    },
+    {
+      "label": "deploy vs Deploy are two instances",
+      "ok": true
+    },
+    {
+      "label": "release instance has exactly the two access paths alias + release",
+      "ok": true
+    },
+    {
+      "label": "copy-a/copy-b are two instances",
+      "ok": true
+    },
+    {
+      "label": "duplicate-content group == 1 (copy-a, copy-b)",
+      "ok": true
+    },
+    {
+      "label": "same-name collisions == 2 (deploy, copy-shared)",
+      "ok": true
+    },
+    {
+      "label": "bad manifest is an INVALID instance, not dropped",
+      "ok": true
+    },
+    {
+      "label": "loop recorded SYMLINK_LOOP",
+      "ok": true
+    },
+    {
+      "label": "escape recorded SYMLINK_OUTSIDE_ROOT",
+      "ok": true
+    },
+    {
+      "label": "dangling link recorded CANONICAL_PATH_UNRESOLVABLE",
+      "ok": true
+    },
+    {
+      "label": "oversize recorded SKILL_MD_TOO_LARGE",
+      "ok": true
+    },
+    {
+      "label": "dir named SKILL.md recorded SKILL_MD_UNREADABLE",
+      "ok": true
+    },
+    {
+      "label": "outside secret never appears in any output",
+      "ok": true
+    },
+    {
+      "label": "no absolute path in the source graph",
+      "ok": true
+    }
+  ]
+}

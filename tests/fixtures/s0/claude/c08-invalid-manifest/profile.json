@@ -1,0 +1,12 @@
+{
+  "cwd": ".",
+  "profileId": "c08-invalid-manifest",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    }
+  ]
+}

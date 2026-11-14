@@ -1,0 +1,13 @@
+{
+  "profileId": "a11-corrupt-config",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "emptyLists": ["imported", "plugin"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" }
+    ]
+  }
+}

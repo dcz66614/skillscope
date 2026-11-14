@@ -1,0 +1,2587 @@
+{
+  "schema": "skillscope.s0-gate/v1",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "base_commit": "5175eb873fc9367829067f739c74aeef8128edd4",
+  "fixture_count": 48,
+  "control_count": 24,
+  "control_false_alarms": 0,
+  "planted_defect_count": 24,
+  "detected_defects": 24,
+  "production_oracle_parity": "48/48",
+  "golden_match_production": "48/48",
+  "golden_match_oracle": "48/48",
+  "incomplete_source_count": 11,
+  "incomplete_fixture_count": 10,
+  "external_request_count": 0,
+  "source_write_count": 0,
+  "source_write_paths": [],
+  "network_capability_hits": [],
+  "replay_count": 100,
+  "unique_gate_hash_count": 1,
+  "gate_sha256": "a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca",
+  "status": "PASS",
+  "failure_reasons": [],
+  "results": [
+    {
+      "fixture_id": "codex/c01-repo-discovery",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "4b12232c906a6a6abc850125aafd2850815e5e6822e8fa141ace6ff473759f09",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/b/.agents/skills/notify/SKILL.md",
+          "canonicalPath": "layout/repo/a/b/.agents/skills/notify/SKILL.md",
+          "logicalName": "notify",
+          "folderName": "notify",
+          "manifestName": "notify",
+          "contentSha256": "5b974808a73a7dddb63888b3c72ae1f6f6b9fbe9a1698c8d3c8fd82b81c86499",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c02-user-admin-system",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "admin",
+          "sourceScope": "ADMIN",
+          "relativePath": "skills/org-wide/SKILL.md",
+          "canonicalPath": "layout/etc-codex/skills/org-wide/SKILL.md",
+          "logicalName": "org-wide",
+          "folderName": "org-wide",
+          "manifestName": "org-wide",
+          "contentSha256": "646f795f17ecda4c99214674e17a9f7be4906616f02d7ef2e0a2cbdf8ce9d882",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "system",
+          "sourceScope": "SYSTEM",
+          "relativePath": "bundled/docx/SKILL.md",
+          "canonicalPath": "bundled/docx/SKILL.md",
+          "logicalName": "docx",
+          "folderName": "docx",
+          "contentSha256": "d52c521244c4e5ddbe4fbb6dbfa097afec5850f8373de1a189b07108e248810a",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "system",
+          "sourceScope": "SYSTEM",
+          "relativePath": "bundled/pdf/SKILL.md",
+          "canonicalPath": "bundled/pdf/SKILL.md",
+          "logicalName": "pdf",
+          "folderName": "pdf",
+          "contentSha256": "8113e55dd6cde62712d383e4dbe28d8240d94b5bef4791143716d74cde726100",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/personal/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/personal/SKILL.md",
+          "logicalName": "personal",
+          "folderName": "personal",
+          "manifestName": "personal",
+          "contentSha256": "894192a4d4c7fc533a4d364a7cc5dd416f3493c94a5ab7de3a5c2df73d419e84",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c03-path-selector",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "483864c383e445c3eb319c4b1f090eb70752f97cd6fb039db0f637b362f2835e",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "18e2d6f6c0da28db42a2d755c82d29a028e6e27685fcf676c526382d8103b66c",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c04-name-selector-blast",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "name-selector-blast-radius",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "483864c383e445c3eb319c4b1f090eb70752f97cd6fb039db0f637b362f2835e",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "18e2d6f6c0da28db42a2d755c82d29a028e6e27685fcf676c526382d8103b66c",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "detail": "name selector \"deploy\" affects 2 distinct instances",
+          "affectedCount": 2,
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c05-last-match-wins",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "483864c383e445c3eb319c4b1f090eb70752f97cd6fb039db0f637b362f2835e",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "18e2d6f6c0da28db42a2d755c82d29a028e6e27685fcf676c526382d8103b66c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c06-symlink-alias",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/alpha/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/alpha/SKILL.md",
+          "logicalName": "alpha",
+          "folderName": "alpha",
+          "manifestName": "alpha",
+          "contentSha256": "d7a481114aad0a78a743f6f7d7c12613ad255d9ea1aa0f775a317f75732d3ca1",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": [
+            ".agents/skills/alpha-alias/SKILL.md"
+          ]
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/beta/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/beta/SKILL.md",
+          "logicalName": "beta",
+          "folderName": "beta",
+          "manifestName": "beta",
+          "contentSha256": "6125658be8175ec3e2c19ca318d2c999c9f67885dd3cada52f7d2528830d72fe",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c07-bundled-disabled",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "system",
+          "sourceScope": "SYSTEM",
+          "relativePath": "bundled/pdf/SKILL.md",
+          "canonicalPath": "bundled/pdf/SKILL.md",
+          "logicalName": "pdf",
+          "folderName": "pdf",
+          "contentSha256": "8113e55dd6cde62712d383e4dbe28d8240d94b5bef4791143716d74cde726100",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c08-unreadable-config",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "fail-open-config",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+          "status": "UNKNOWN",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/personal/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/personal/SKILL.md",
+          "logicalName": "personal",
+          "folderName": "personal",
+          "manifestName": "personal",
+          "contentSha256": "894192a4d4c7fc533a4d364a7cc5dd416f3493c94a5ab7de3a5c2df73d419e84",
+          "status": "UNKNOWN",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FAIL_OPEN_CONFIG",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "detail": "skills.config could not be read or parsed; effective set is unknown (fail closed)",
+          "instanceIds": []
+        },
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "PLUGIN",
+          "status": "UNKNOWN",
+          "detail": "PLUGIN source could not be enumerated; absence is not evidence of absence",
+          "instanceIds": []
+        },
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "UNKNOWN",
+          "detail": "SYSTEM source could not be enumerated; absence is not evidence of absence",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 3,
+        "requiredSources": 5,
+        "unknownScopes": [
+          "PLUGIN",
+          "SYSTEM"
+        ]
+      },
+      "extra": {
+        "configReadable": false
+      }
+    },
+    {
+      "fixture_id": "codex/c09-name-selector-single",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "a82b9e0506a516f655781112e5d63d5b7de11a0eb88a57df2915375581d9d113",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/personal/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/personal/SKILL.md",
+          "logicalName": "personal",
+          "folderName": "personal",
+          "manifestName": "personal",
+          "contentSha256": "a607ba82d6796caf79d559f775962da46ed655880701332e265c3dd104690687",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c10-same-name-coexist",
+      "engine": "codex",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "admin",
+          "sourceScope": "ADMIN",
+          "relativePath": "skills/deploy/SKILL.md",
+          "canonicalPath": "layout/etc-codex/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "92113d145d0212d87f13fa5d53ffd46bffd49cdb737dfd29ba675ac173a0a3ba",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "6f35fa81b73258e399e20e212ebafde5dc5fe74010b30041c58109883f330608",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "0b0ba45c56173a92aa9d1855d32b82b83b5de9dc4857ff24e49111f891053df4",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c11-missing-user-source",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "source-not-enumerated-user",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "ec32f4e726bb7ab15f4258c5adcc5345acb82ef82b483a5b6d08b5658fbc809d",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "USER",
+          "status": "UNKNOWN",
+          "detail": "USER source could not be enumerated; absence is not evidence of absence",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 4,
+        "requiredSources": 5,
+        "unknownScopes": [
+          "USER"
+        ]
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c12-missing-system-inventory",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "source-not-enumerated-system",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "f8493ac9ab255c5f058b4d1abd65c20e92e3ca1da21411a66c4eabd7b0c0029c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/personal/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/personal/SKILL.md",
+          "logicalName": "personal",
+          "folderName": "personal",
+          "manifestName": "personal",
+          "contentSha256": "4e132347f93a4a635a0ab1af6f05d42d6ff6c28e3ac2149e207a4da5a29299b4",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "UNKNOWN",
+          "detail": "SYSTEM source could not be enumerated; absence is not evidence of absence",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 4,
+        "requiredSources": 5,
+        "unknownScopes": [
+          "SYSTEM"
+        ]
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c13-missing-plugin-inventory",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "source-not-enumerated-plugin",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/release/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "30449c51ad2fd02dd9d2483114079b7c59fb24271177c9ac511b2e490d33a56d",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/personal/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/personal/SKILL.md",
+          "logicalName": "personal",
+          "folderName": "personal",
+          "manifestName": "personal",
+          "contentSha256": "122d5b501c1a55f8093f327e11df4f0fb25b5631b49bfed98a0cda6b600bdcba",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "PLUGIN",
+          "status": "UNKNOWN",
+          "detail": "PLUGIN source could not be enumerated; absence is not evidence of absence",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 4,
+        "requiredSources": 5,
+        "unknownScopes": [
+          "PLUGIN"
+        ]
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c14-name-blast-three-scopes",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "name-selector-blast-radius",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "admin",
+          "sourceScope": "ADMIN",
+          "relativePath": "skills/deploy/SKILL.md",
+          "canonicalPath": "layout/etc-codex/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "648a53059558a1dd6aff0d30b41d60af29fb45a82ad00f428353be3528501816",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "ba20ab8d8c36479e4c1fbbac32495879a93e46976de5708e6431f36c7aeb55ad",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "user",
+          "sourceScope": "USER",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/home/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "8aa2a301c6d84d998b990db086560a12b1eee2169edb9d15de8ff6e22819d840",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "detail": "name selector \"deploy\" affects 3 distinct instances",
+          "affectedCount": 3,
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c15-mixed-name-path-order",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "last-match-order",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "d2be61c4f6a63638437718043dd89e4637e2676570063cfd4b5bf7f7b75a84dc",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "54d21046358499df51cae54dd00caa7a6e83f620cb3712eefcd7588f7f7e566c",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "detail": "name selector \"deploy\" affects 2 distinct instances",
+          "affectedCount": 2,
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "codex/c16-path-selector-wrong-target",
+      "engine": "codex",
+      "kind": "planted",
+      "defect": "path-selector-wrong-target",
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": ".agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "8404fee4a175804b25ea78d6b3ea0adfeee7cb77cc3c35b685e57da2734fbe27",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "repo",
+          "sourceScope": "REPO",
+          "relativePath": "a/.agents/skills/deploy/SKILL.md",
+          "canonicalPath": "layout/repo/a/.agents/skills/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "64d7f9b906deb56ef65b9ce943b98eb813e0de80ee976681584663141780c94a",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5,
+        "unknownScopes": []
+      },
+      "extra": {
+        "configReadable": true
+      }
+    },
+    {
+      "fixture_id": "claude/c01-basic",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "enterprise",
+          "sourceScope": "ENTERPRISE",
+          "relativePath": "ent-admin/SKILL.md",
+          "canonicalPath": "enterprise/ent-admin/SKILL.md",
+          "logicalName": "ent-admin",
+          "folderName": "ent-admin",
+          "manifestName": "ent-admin",
+          "contentSha256": "99faaa21245e64705944230e042084e5295cc8432c2e03f7750b355d6b930e74",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "personal",
+          "sourceScope": "PERSONAL",
+          "relativePath": "my-notes/SKILL.md",
+          "canonicalPath": "personal/my-notes/SKILL.md",
+          "logicalName": "my-notes",
+          "folderName": "my-notes",
+          "manifestName": "my-notes",
+          "contentSha256": "59902ab6c49f5045ca75b69b6d3aa08c5345999cfc418e4d559ca6b4efb13ae0",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "667ba3d9b66eba56943ae9bb5360e6eafb925b5228c5b582da6fc60c939ce1fa",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 3,
+        "requiredSources": 3,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c02-root-nested-coexist",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "nested",
+          "sourceScope": "NESTED",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "nested/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "86b4c7d7dbe05678ea7b7a59d9147238bda425c4ce12b27f38031b526ef59422",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "d0ab31274df6dcf082b455094a7dbe76d627018a3970dd9503e9d253a5e55f1c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "logical name \"deploy\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "nested:deploy/SKILL.md",
+            "project:deploy/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c03-plugin-namespace",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "plugin-acme",
+          "sourceScope": "PLUGIN",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "plugin-acme/deploy/SKILL.md",
+          "logicalName": "acme:deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "06fde6446ce2d52383476320e910c4342033535261906ade97d4117aefc66e39",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "2be7d12ff5f9eba3d2b8cd9db32b8e510c0368ea6af87933dac561979276f240",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c04-adddir-and-sync",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "adddir",
+          "sourceScope": "ADD_DIR",
+          "relativePath": "helper/SKILL.md",
+          "canonicalPath": "adddir/helper/SKILL.md",
+          "logicalName": "helper",
+          "folderName": "helper",
+          "manifestName": "helper",
+          "contentSha256": "96e58e447c1f3b7928926d412f5d0e366b26a00c1e3381c83d5358931e429d6c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "sync",
+          "sourceScope": "ACCOUNT_SYNC",
+          "relativePath": "snapshot/synced-docs/SKILL.md",
+          "canonicalPath": "snapshot/synced-docs/SKILL.md",
+          "logicalName": "synced-docs",
+          "folderName": "synced-docs",
+          "manifestName": "synced-docs",
+          "contentSha256": "5e06462516ea17f697261a6a25adefd7d49ea6ae44743046e784d6214cd95e6c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "HOST_SNAPSHOT",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c05-name-override-blast",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "name-selector-blast-radius",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "personal",
+          "sourceScope": "PERSONAL",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "personal/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "f0c95173a73c18745b307442766f061452231daa2298b7a59aebb1b65a8e9ec3",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "c7256dd717a4da441c6cd76873a48e9c46cf8c61e98b8c2d97358648a33eab47",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "name-based override \"deploy\" disables 2 distinct instances",
+          "instanceIds": [
+            "personal:deploy/SKILL.md",
+            "project:deploy/SKILL.md"
+          ]
+        },
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "logical name \"deploy\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "personal:deploy/SKILL.md",
+            "project:deploy/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c06-sync-unenumerated",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "source-not-enumerated-account-sync",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "f4fcfb39bbd43b1b34eb6cfd856881177d34487d806e599bf004475770f82653",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "ACCOUNT_SYNC",
+          "status": "UNKNOWN",
+          "detail": "account-sync source sync has no host snapshot; synced skills cannot be enumerated",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 1,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "ACCOUNT_SYNC"
+        ]
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c07-nested-scope-leak",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "scope-leak-nested",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "nested",
+          "sourceScope": "NESTED",
+          "relativePath": "internal-tool/SKILL.md",
+          "canonicalPath": "nested/internal-tool/SKILL.md",
+          "logicalName": "internal-tool",
+          "folderName": "internal-tool",
+          "manifestName": "internal-tool",
+          "contentSha256": "df8ac7fd1537b384c5ef9735a113d2703f86576b290183b1c21ca8a7f0a2e6b2",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "497819b57601a18e5aa2b80353a2d9a5274c0dcfc49f13edbea9438c819c1d70",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SCOPE_LEAK",
+          "severity": "P1",
+          "sourceScope": "NESTED",
+          "status": "CONFIRMED",
+          "detail": "skill \"internal-tool\" from forbidden scope NESTED is in the effective set",
+          "instanceIds": [
+            "nested:internal-tool/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c08-invalid-manifest",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "invalid-manifest",
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "broken/SKILL.md",
+          "canonicalPath": "project/broken/SKILL.md",
+          "logicalName": "broken",
+          "folderName": "broken",
+          "contentSha256": "68f60f1cacc8e4b1e6d7e1a120db985e7fa1175e7b16f9934d80771ddc165a98",
+          "status": "INVALID",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "INVALID_MANIFEST",
+          "severity": "P2",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "SKILL.md at broken/SKILL.md has invalid frontmatter: missing-name",
+          "instanceIds": [
+            "project:broken/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 1,
+        "requiredSources": 1,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c09-enterprise-personal-same-name",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "enterprise",
+          "sourceScope": "ENTERPRISE",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "enterprise/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "896fee0e15637c6a517a8a2386ca54dc560888ebb560c878f2e643cfc5c37287",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "personal",
+          "sourceScope": "PERSONAL",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "personal/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "8757b72a62a40a84c297a39c50d6f27d829c3d5135d0085a053ca56080c5951e",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "ENTERPRISE",
+          "status": "CONFIRMED",
+          "detail": "logical name \"deploy\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "enterprise:deploy/SKILL.md",
+            "personal:deploy/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c10-plugin-override-scoped",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "plugin-acme",
+          "sourceScope": "PLUGIN",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "plugin-acme/deploy/SKILL.md",
+          "logicalName": "acme:deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "95b05b23a3d6eae745a4e0f952632ae84d01492388cce3d5aecdeb0df798ed31",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "53e72bbb4309bc8817c9cbd8b3275a372020fbef46f5b5bf6dc2776877fe5338",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c11-adddir-unvisited-nested",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "e0378a9d0429b1cf8b647b5fce96e8a9187ebe0d6531d555505aa42595b6f311",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c12-duplicate-content-p2",
+      "engine": "claude-code",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "personal",
+          "sourceScope": "PERSONAL",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "personal/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "04b06f5c073254157069339aa084e53acead7732a3ceb4dc0bf31cebf18d9a46",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "04b06f5c073254157069339aa084e53acead7732a3ceb4dc0bf31cebf18d9a46",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "DUPLICATE_CONTENT",
+          "severity": "P2",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "content hash 04b06f5c0732… appears at 2 distinct paths",
+          "instanceIds": [
+            "personal:release/SKILL.md",
+            "project:release/SKILL.md"
+          ]
+        },
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "PROJECT",
+          "status": "CONFIRMED",
+          "detail": "logical name \"release\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "personal:release/SKILL.md",
+            "project:release/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c13-enterprise-scope-leak",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "scope-leak-enterprise",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "enterprise",
+          "sourceScope": "ENTERPRISE",
+          "relativePath": "ent-admin/SKILL.md",
+          "canonicalPath": "enterprise/ent-admin/SKILL.md",
+          "logicalName": "ent-admin",
+          "folderName": "ent-admin",
+          "manifestName": "ent-admin",
+          "contentSha256": "c3bb3f55f977cd921e9452a45408371155dd3d6573a5ccb33d1dee438bfd1cd3",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "30449c51ad2fd02dd9d2483114079b7c59fb24271177c9ac511b2e490d33a56d",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SCOPE_LEAK",
+          "severity": "P1",
+          "sourceScope": "ENTERPRISE",
+          "status": "CONFIRMED",
+          "detail": "skill \"ent-admin\" from forbidden scope ENTERPRISE is in the effective set",
+          "instanceIds": [
+            "enterprise:ent-admin/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c14-plugin-namespace-flattened",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "plugin-namespace-flattened",
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "plugin-acme",
+          "sourceScope": "PLUGIN",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "plugin-acme/deploy/SKILL.md",
+          "logicalName": "acme:deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "7e4266b8387585ba7aa782c4ec2d0a4d0b291ce441e420a9605165a8f09898d2",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "ad6ed4dce4fe6b77ea700e9f1ebb3fc63affac4b4d2e355e6bc21eca4513aff2",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c15-adddir-missing-required",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "source-not-enumerated-add-dir",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "project/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "0e391bc8addc17f7a59077e6f854312b21dfa311715b617504985495b96da27e",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "ADD_DIR",
+          "status": "UNKNOWN",
+          "detail": "required source root adddir (<FIXTURE_DIR>/adddir) is missing or unreadable",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 1,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "ADD_DIR"
+        ]
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "claude/c16-override-blast-three-scopes",
+      "engine": "claude-code",
+      "kind": "planted",
+      "defect": "name-selector-blast-radius",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "enterprise",
+          "sourceScope": "ENTERPRISE",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "enterprise/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "eb53ceb7fc21e7f60f035051c81c9fd0b9ca3fb7265c47078d39db7d8a7aaf94",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "personal",
+          "sourceScope": "PERSONAL",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "personal/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "8b6ce4804b6f867a3fceb6df3233c50c6c603766c5e219dcecb358969f89c44d",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "project",
+          "sourceScope": "PROJECT",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "project/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "78a56881fbde3a7ef96cc401b9e98d222a7c80b701748b87dca068c51a6d8d55",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "ENTERPRISE",
+          "status": "CONFIRMED",
+          "detail": "name-based override \"deploy\" disables 3 distinct instances",
+          "instanceIds": [
+            "enterprise:deploy/SKILL.md",
+            "personal:deploy/SKILL.md",
+            "project:deploy/SKILL.md"
+          ]
+        },
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "ENTERPRISE",
+          "status": "CONFIRMED",
+          "detail": "logical name \"deploy\" resolves to 3 distinct instances at different paths",
+          "instanceIds": [
+            "enterprise:deploy/SKILL.md",
+            "personal:deploy/SKILL.md",
+            "project:deploy/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 3,
+        "requiredSources": 3,
+        "unknownScopes": []
+      },
+      "extra": {}
+    },
+    {
+      "fixture_id": "openmausbot/o01-optout",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "42702ecccfb5932504d1ee8d81f2f1fd2bd7bd42b5f4509a12c734d291f317a3",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-deploy/SKILL.md",
+          "canonicalPath": "library/every-deploy/SKILL.md",
+          "logicalName": "every-deploy",
+          "folderName": "every-deploy",
+          "manifestName": "every-deploy",
+          "contentSha256": "bc85a71b7b4dfb78a89733985a4e14361031a9c5c9f8602146d4139c82009ad2",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "5ac8f70608177ccf4c8deecf8bf37b7a474075fbcc48e7cac43246a99c2eb225",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o02-user-skills-on",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "9f0443505047236aab4bc3392fc70a72f67988e4eced0e8517e2bda0ab64d719",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "c910369e09b1d4326521a99fc1c414b96fc20d1a1e38b5fe027ca7a2d9c3f6a6",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:user-claude",
+          "sourceScope": "USER",
+          "relativePath": "my-notes/SKILL.md",
+          "canonicalPath": "user-claude/my-notes/SKILL.md",
+          "logicalName": "my-notes",
+          "folderName": "my-notes",
+          "manifestName": "my-notes",
+          "contentSha256": "aff06769a881d7b3c7dd6d33304bfcb95a1d2c177619139449f4ce00589bff1b",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": true,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o03-no-config-defaults",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "effda28fa786059cac0a380d5f922bd464ce255c670596a848d1c92018d07b2c",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "5de1f9f84a5097d7f36dc7f178cc721bdaf7a12bc322ee3c4a4ef8a236321ca3",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:user-claude",
+          "sourceScope": "USER",
+          "relativePath": "my-notes/SKILL.md",
+          "canonicalPath": "user-claude/my-notes/SKILL.md",
+          "logicalName": "my-notes",
+          "folderName": "my-notes",
+          "manifestName": "my-notes",
+          "contentSha256": "1aa33cf8c48d326fe268a1ab71aaff8561815d37bbbae34f9b5961a2b116ebc5",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "defaults"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o04-imported-clean",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "38a1135751ed4e5438ddaecedfb67fa6c335754981331f8e4236c5677f575886",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:imported",
+          "sourceScope": "IMPORTED",
+          "relativePath": "rex/SKILL.md",
+          "canonicalPath": "imported/rex/SKILL.md",
+          "logicalName": "rex",
+          "folderName": "rex",
+          "manifestName": "rex",
+          "contentSha256": "2884a1620f53593b46b0bcf692cf2b4670560466f4a56a055db7e8cabe88778e",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o05-optout-corrupt",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "fail-open-opt-out",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "6c4469026da3ebedeed20ba652fdc0f0eb64b97d0ffe2ed4b2567a308a103227",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "7c08d8715a32b4d46a1ea80bce5d2658cd9595143edab6d082f15516683c87ed",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FAIL_OPEN_CONFIG",
+          "severity": "P1",
+          "sourceScope": "SHARED_LIBRARY",
+          "status": "CONFIRMED",
+          "detail": "library opt-out file at <FIXTURE_DIR>/data/skill-state/bot-1/library-opt-out.json is invalid-json; per public docs the bot may regain every-bot skills",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "SHARED_LIBRARY"
+        ]
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o06-imported-original-active",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "import-original-path-still-active",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "imported-original",
+          "sourceScope": "IMPORTED",
+          "relativePath": "rex/SKILL.md",
+          "canonicalPath": "original/rex/SKILL.md",
+          "logicalName": "rex",
+          "folderName": "rex",
+          "manifestName": "rex",
+          "contentSha256": "bac015b327750294e2ff7f0d2bdb75130157c6db9639250bdbf98f8ebe2bb1b0",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "f3e9af57330ace2890050198b57cbf84ea52ad69b13b5b644a6141a37a62e02f",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:imported",
+          "sourceScope": "IMPORTED",
+          "relativePath": "rex/SKILL.md",
+          "canonicalPath": "imported/rex/SKILL.md",
+          "logicalName": "rex",
+          "folderName": "rex",
+          "manifestName": "rex",
+          "contentSha256": "a965b28bedf52e6ed242d65332fe4d7932934f3295e2dbc5e2d0426300c72311",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "IMPORT_ORIGINAL_PATH_STILL_ACTIVE",
+          "severity": "P1",
+          "sourceScope": "IMPORTED",
+          "status": "CONFIRMED",
+          "detail": "imported skill \"rex\" was closed but its original folder <FIXTURE_DIR>/original/rex is still under a loadable root",
+          "instanceIds": [
+            "snapshot:imported:rex/SKILL.md"
+          ]
+        },
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "IMPORTED",
+          "status": "CONFIRMED",
+          "detail": "logical name \"rex\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "imported-original:rex/SKILL.md",
+            "snapshot:imported:rex/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o07-native-name-blast",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "name-selector-blast-radius",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "1c2c272f58308ad65dd68d99ed5c3218aeefc8aa65c35cbf269d46a5e6a5ee0b",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:native",
+          "sourceScope": "SYSTEM",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "native/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "7a9f60bb1a54e717beffab7fb1626b75b814ffd08d36d5145615d9e3514f8adb",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:repo",
+          "sourceScope": "REPO",
+          "relativePath": "deploy/SKILL.md",
+          "canonicalPath": "repo/deploy/SKILL.md",
+          "logicalName": "deploy",
+          "folderName": "deploy",
+          "manifestName": "deploy",
+          "contentSha256": "7678c749a1d904a8f00c59a6b3f60ac268068171a16790b45bb5c499cd7b998b",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "CONFIRMED",
+          "detail": "per-bot native name switch \"deploy\" disables 2 distinct instances",
+          "instanceIds": [
+            "snapshot:native:deploy/SKILL.md",
+            "snapshot:repo:deploy/SKILL.md"
+          ]
+        },
+        {
+          "id": "SAME_NAME_COLLISION",
+          "severity": "P2",
+          "sourceScope": "SYSTEM",
+          "status": "CONFIRMED",
+          "detail": "logical name \"deploy\" resolves to 2 distinct instances at different paths",
+          "instanceIds": [
+            "snapshot:native:deploy/SKILL.md",
+            "snapshot:repo:deploy/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o08-plugin-no-switch",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "scope-leak-plugin",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "60db02468baa3b28c10e24f5729566af39094c1ccd66364e517c3ffe835871ed",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:plugin",
+          "sourceScope": "PLUGIN",
+          "relativePath": "sites/SKILL.md",
+          "canonicalPath": "plugin/sites/SKILL.md",
+          "logicalName": "openai-curated-remote:sites",
+          "folderName": "sites",
+          "manifestName": "sites",
+          "contentSha256": "02bb0c23c80e7cc8fd261bf7acb050bd90811bd5687ae64c2ff6f19d043070b5",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SCOPE_LEAK",
+          "severity": "P1",
+          "sourceScope": "PLUGIN",
+          "status": "CONFIRMED",
+          "detail": "skill \"openai-curated-remote:sites\" from forbidden scope PLUGIN is in the effective set",
+          "instanceIds": [
+            "snapshot:plugin:sites/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o09-library-off-discovered",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "edd062d8cd2d5eb576b41aa85a36a5dcd90dc84fa5eede5fab2f3f033910d399",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "2bb2d54f288e523da377f60e99f7680d376b873f5ae4d65270215e4c78a49504",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o10-disabled-plugin-ids",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "c2262887e49856835d4da4e96017802e4e7357785076a8bdf9d97950cd8f010d",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:plugin",
+          "sourceScope": "PLUGIN",
+          "relativePath": "sites/SKILL.md",
+          "canonicalPath": "plugin/sites/SKILL.md",
+          "logicalName": "openai-curated-remote:sites",
+          "folderName": "sites",
+          "manifestName": "sites",
+          "contentSha256": "6cba6a90764fc812ab36020e44e4aaeb593ca14ab280d30b28197039c930f8e4",
+          "status": "DISABLED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o11-optout-empty-list",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "50e380cb30cade9afe35f7bb1e69e81252cc30f3fa11879e40d3c3b5e7246ee3",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "34dc1d06f1be3de72e4c1939f824ee407b7e0ab6f5a8d3d81612a7e0dbbe5cad",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o12-user-skills-off-discovered",
+      "engine": "openmausbot",
+      "kind": "control",
+      "defect": null,
+      "status": "PASS",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "e046af7e6d1fe1af0ae494bbdadb690d6a3ef7f31b64a383eff3f75a2225c9c8",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:user-claude",
+          "sourceScope": "USER",
+          "relativePath": "my-notes/SKILL.md",
+          "canonicalPath": "user-claude/my-notes/SKILL.md",
+          "logicalName": "my-notes",
+          "folderName": "my-notes",
+          "manifestName": "my-notes",
+          "contentSha256": "fb8d254fc394cb86480cd39937da7d5f3d8fcb01f46abfa535e47e7bcc532f44",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o13-unknown-snapshot-version",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "unknown-snapshot-version",
+      "status": "INCOMPLETE",
+      "instances": [],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "UNKNOWN",
+          "detail": "snapshot version \"openmausbot-snapshot/v99\" is unknown; per-bot inventory cannot be trusted",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 1,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "SNAPSHOT"
+        ]
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o14-missing-snapshot-skill-dir",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "source-not-enumerated-snapshot-skill",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "6f7f310b24d78c1190c679c7654b25745f47a7661342defdd2523a3dc5340be7",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "BOT_ASSIGNED",
+          "status": "UNKNOWN",
+          "detail": "snapshot skill \"ghost\" (assigned) points at missing or unreadable directory <FIXTURE_DIR>/assigned/does-not-exist",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "BOT_ASSIGNED"
+        ]
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o15-invalid-config-json",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "fail-open-config",
+      "status": "INCOMPLETE",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "edd078b7107166fbdc335637cf62959a66c446e8ad500fd9033d47af8b89cf8b",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "4f54aefaf60e811823bb029a0dff16565fa5106bf15135395f99817597b00aa5",
+          "status": "DISCOVERED",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FAIL_OPEN_CONFIG",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "CONFIRMED",
+          "detail": "config.json at <FIXTURE_DIR>/data/config.json is invalid-json; flag state unknown, host may fall back to defaults",
+          "instanceIds": []
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 1,
+        "requiredSources": 2,
+        "unknownScopes": [
+          "CONFIG"
+        ]
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": false,
+          "configSource": "invalid"
+        }
+      }
+    },
+    {
+      "fixture_id": "openmausbot/o16-shared-library-scope-leak",
+      "engine": "openmausbot",
+      "kind": "planted",
+      "defect": "scope-leak-shared-library",
+      "status": "FAIL",
+      "instances": [
+        {
+          "sourceRootId": "snapshot:assigned",
+          "sourceScope": "BOT_ASSIGNED",
+          "relativePath": "release/SKILL.md",
+          "canonicalPath": "assigned/release/SKILL.md",
+          "logicalName": "release",
+          "folderName": "release",
+          "manifestName": "release",
+          "contentSha256": "7f32b80559f89cd4647d79be0249bb538f81f3789f4f84143a032e0bb7d713eb",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        },
+        {
+          "sourceRootId": "snapshot:library",
+          "sourceScope": "SHARED_LIBRARY",
+          "relativePath": "every-docs/SKILL.md",
+          "canonicalPath": "library/every-docs/SKILL.md",
+          "logicalName": "every-docs",
+          "folderName": "every-docs",
+          "manifestName": "every-docs",
+          "contentSha256": "a09ac0b2ab183409dcc67cd4947f7568061c992ba65b2340507f4764c029375a",
+          "status": "ELIGIBLE",
+          "evidenceLevel": "STATIC_RULE",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "SCOPE_LEAK",
+          "severity": "P1",
+          "sourceScope": "SHARED_LIBRARY",
+          "status": "CONFIRMED",
+          "detail": "skill \"every-docs\" from forbidden scope SHARED_LIBRARY is in the effective set",
+          "instanceIds": [
+            "snapshot:library:every-docs/SKILL.md"
+          ]
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 2,
+        "requiredSources": 2,
+        "unknownScopes": []
+      },
+      "extra": {
+        "botId": "bot-1",
+        "flags": {
+          "claudeUserSkills": false,
+          "skillsLibrary": true,
+          "configSource": "file"
+        }
+      }
+    }
+  ]
+}

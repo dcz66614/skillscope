@@ -1,0 +1,438 @@
+{
+  "schema": "skillscope.verify-all/v1",
+  "generated_utc": "2026-11-13T21:39:08.812Z",
+  "head_commit": "83de9180da597919916f706d2f4db1ec8059fbcf",
+  "steps": [
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "duration_ms": 5610,
+      "status": "PASS",
+      "output_tail": "> skillscope@0.1.0 typecheck\n> tsc --noEmit"
+    },
+    {
+      "name": "test",
+      "command": "npm test",
+      "exit_code": 0,
+      "duration_ms": 28320,
+      "status": "PASS",
+      "output_tail": " \u001b[32m✓\u001b[39m tests/rules/findings.test.ts \u001b[2m(\u001b[22m\u001b[2m19 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 67\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/hash/hash.test.ts \u001b[2m(\u001b[22m\u001b[2m41 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 64\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/golden/extended-golden.test.ts \u001b[2m(\u001b[22m\u001b[2m14 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 28\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/openmausbot/snapshot.test.ts \u001b[2m(\u001b[22m\u001b[2m17 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 18\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/rules/policy.test.ts \u001b[2m(\u001b[22m\u001b[2m18 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 65\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/fsutil/fsutil.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/claude/rules.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 70\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/contracts/contracts.test.ts \u001b[2m(\u001b[22m\u001b[2m10 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 10\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m✓\u001b[39m tests/claude/settings.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m33 passed\u001b[39m\u001b[22m\u001b[90m (33)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m573 passed\u001b[39m\u001b[22m\u001b[90m (573)\u001b[39m\n\u001b[2m   Start at \u001b[22m 21:38:08\n\u001b[2m   Duration \u001b[22m 26.94s\u001b[2m (tests 92%, import 5%, transform 2%, worker 1%)\u001b[22m\n\u001b[2m    Isolate \u001b[22m \u001b[33m33 workers spawned\u001b[39m\u001b[2m · ~448ms startup each (spawn + environment, per file)\u001b[22m\n\u001b[2m            \u001b[22m \u001b[2mat least ~4.48s faster with \u001b[22m\u001b[33misolate: false\u001b[39m\u001b[2m — reuses workers across files instead of one per file\u001b[22m"
+    },
+    {
+      "name": "test:oracle",
+      "command": "npm run test:oracle",
+      "exit_code": 0,
+      "duration_ms": 429,
+      "status": "PASS",
+      "output_tail": "> skillscope@0.1.0 test:oracle\n> python3 -m unittest discover -s oracle/tests\n..............................................................\n----------------------------------------------------------------------\nRan 62 tests in 0.063s\nOK"
+    },
+    {
+      "name": "test:e2e",
+      "command": "npm run test:e2e",
+      "exit_code": 0,
+      "duration_ms": 14271,
+      "status": "PASS",
+      "output_tail": "[PASS] claude-pass: HTML external resources 0\n[PASS] claude-pass: HTML contains the status meaning text\n[PASS] openmausbot-incomplete: json exit 2 (expected 2)\n[PASS] openmausbot-incomplete: html exit 2 (expected 2)\n[PASS] openmausbot-incomplete: report status INCOMPLETE (expected INCOMPLETE)\n[PASS] openmausbot-incomplete: JSON validates against skillscope.report/v1\n[PASS] openmausbot-incomplete: audit_sha256 present\n[PASS] openmausbot-incomplete: embedded JSON byte-identical to canonical JSON report\n[PASS] openmausbot-incomplete: HTML external resources 0\n[PASS] openmausbot-incomplete: HTML contains the status meaning text\n[PASS] determinism: codex-fail audited twice → identical JSON bytes\n[PASS] verify --fixtures s0 exits 0 (S0 gate still green) — exit 0\n[PASS] screenshot codex-fail HTML report — ok: /home/hatch/workspace/p023-skillscope/03_evidence/T012/e2e-codex-fail.png (136209 bytes)\n[PASS] fixture trees byte-identical before/after (0 source writes)\ne2e: PASS — 28/28 checks passed"
+    },
+    {
+      "name": "test:offline",
+      "command": "npm run test:offline",
+      "exit_code": 0,
+      "duration_ms": 5616,
+      "status": "PASS",
+      "output_tail": "> skillscope@0.1.0 test:offline\n> node ./scripts/offline-check.mjs\nstatic scan: OK (no network call sites, no https:// in dist)\ndead-proxy demo audits: OK (exit 1/0/2, no URLs in reports, no external resources)\ndocs scan: OK (no https:// in README/docs/workflows)\noffline-check: PASS — no account, no LLM, no network, no real skills needed"
+    },
+    {
+      "name": "test:performance",
+      "command": "npm run test:performance",
+      "exit_code": 0,
+      "duration_ms": 6470,
+      "status": "PASS",
+      "output_tail": "> skillscope@0.1.0 test:performance\n> node ./scripts/performance.mjs\nperformance: PASS\nscan: 295, 246, 203 ms (median 246, target ≤ 5000)\nhtml: 263, 307, 260 ms (median 263, target ≤ 2000)\npeak RSS: 82.3 MiB (target ≤ 300)\ninstances: 500/500, hash stable: true\nevidence: /home/hatch/workspace/p023-skillscope/03_evidence/T012/performance.json"
+    },
+    {
+      "name": "s0:gate",
+      "command": "npm run s0:gate",
+      "exit_code": 0,
+      "duration_ms": 6818,
+      "status": "PASS",
+      "output_tail": "> skillscope@0.1.0 s0:gate\n> node ./scripts/s0-gate.mjs\nS0 gate PASS — seed P023-SKILLSCOPE-S0-2026-11-13 — base 83de9180da597919916f706d2f4db1ec8059fbcf\nfixtures: 48 (control 24, planted 24)\nproduction/oracle parity: 48/48\ngolden match: production 48/48, oracle 48/48\ndetected defects: 24/24; control false alarms: 0\nincomplete sources: 11 across 10 fixtures\nexternal requests: 0; source writes: 0\nreplay: 100 runs, 1 unique gate hash\ngate_sha256: a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca"
+    },
+    {
+      "name": "license-inventory",
+      "command": "node scripts/verify-all.mjs (license inventory)",
+      "exit_code": 0,
+      "duration_ms": 0,
+      "status": "PASS",
+      "output_tail": "42 packages installed, licenses: Apache-2.0, BSD-3-Clause, ISC, MIT, MPL-2.0; 30 optional platform packages not installed on linux x64"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.3",
+      "license": "MIT"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT"
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.156.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.19",
+      "license": "MIT"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.19",
+      "license": "MIT"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.1.1",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.10",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.19.2",
+      "license": "MIT"
+    },
+    {
+      "name": "@vitest/mocker",
+      "version": "5.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@vitest/spy",
+      "version": "5.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "license": "MIT"
+    },
+    {
+      "name": "chai",
+      "version": "6.3.0",
+      "license": "MIT"
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "es-module-lexer",
+      "version": "2.3.2",
+      "license": "MIT"
+    },
+    {
+      "name": "estree-walker",
+      "version": "3.0.3",
+      "license": "MIT"
+    },
+    {
+      "name": "expect-type",
+      "version": "1.4.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "license": "MPL-2.0"
+    },
+    {
+      "name": "magic-string",
+      "version": "1.4.5",
+      "license": "MIT"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.20",
+      "license": "MIT"
+    },
+    {
+      "name": "obug",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.32",
+      "license": "MIT"
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.19",
+      "license": "MIT"
+    },
+    {
+      "name": "smol-toml",
+      "version": "1.9.1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "std-env",
+      "version": "4.3.0",
+      "license": "MIT"
+    },
+    {
+      "name": "tinybench",
+      "version": "6.2.3",
+      "license": "MIT"
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.1",
+      "license": "MIT"
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "undici-types",
+      "version": "7.24.6",
+      "license": "MIT"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.8",
+      "license": "MIT"
+    },
+    {
+      "name": "vitest",
+      "version": "5.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "why-is-node-running",
+      "version": "3.2.1",
+      "license": "MIT"
+    },
+    {
+      "name": "yaml",
+      "version": "2.9.1",
+      "license": "ISC"
+    }
+  ],
+  "not_installed_optional": [
+    {
+      "name": "@emnapi/core",
+      "version": "2.0.0-beta.2",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@emnapi/runtime",
+      "version": "2.0.0-beta.2",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "version": "2.2.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.2.6",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-wasm32-wasi",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.19",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.4",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "reason": "optional platform package, not installed on linux x64"
+    },
+    {
+      "name": "tslib",
+      "version": "2.9.1",
+      "reason": "optional platform package, not installed on linux x64"
+    }
+  ],
+  "product_license": "MIT (LICENSE, sha256 50b8b302ffcb53aec1866ad4b94721c200400e6aac8cee12db03b85f24e39ed2)",
+  "verdict": "PASS",
+  "failures": []
+}

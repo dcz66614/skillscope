@@ -1,0 +1,43 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c07-bundled-disabled",
+  "status": "PASS",
+  "skills": [
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/release/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/release/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/release/SKILL.md",
+      "logicalName": "release",
+      "folderName": "release",
+      "manifestName": "release",
+      "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+      "canonicalPathHash": "c23835b432702343a75f7692f7057f63646a1b96412db8bc918d7cad264b5a95",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:system:bundled/pdf/SKILL.md",
+      "sourceRootId": "system",
+      "sourceScope": "SYSTEM",
+      "relativePath": "bundled/pdf/SKILL.md",
+      "canonicalPath": "bundled/pdf/SKILL.md",
+      "logicalName": "pdf",
+      "folderName": "pdf",
+      "contentSha256": "8113e55dd6cde62712d383e4dbe28d8240d94b5bef4791143716d74cde726100",
+      "canonicalPathHash": "ca86f13a5c8ed51e6a4795853fb7c15f27f7ff0e31c24f1e77eb1a0af28b0b4e",
+      "status": "DISABLED",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [],
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "unknownSources": [],
+  "configReadable": true
+}

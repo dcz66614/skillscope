@@ -1,0 +1,20 @@
+{
+  "coverage": {
+    "enumeratedSources": 1,
+    "requiredSources": 2,
+    "unknownScopes": [
+      "ACCOUNT_SYNC"
+    ]
+  },
+  "findings": [
+    "SOURCE_NOT_ENUMERATED"
+  ],
+  "instances": [
+    {
+      "logicalName": "release",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE"
+}

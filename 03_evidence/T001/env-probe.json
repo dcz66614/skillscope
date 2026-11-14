@@ -1,0 +1,77 @@
+{
+  "probedAtUtc": "2026-11-13T13:00:23.684Z",
+  "workdir": "/home/hatch/workspace/p023-skillscope",
+  "commands": {
+    "uname": {
+      "command": "uname -a",
+      "exitCode": 0,
+      "output": "Linux htch-runtime 7.0.0-44-generic #1 SMP PREEMPT_DYNAMIC Fri Nov  6 01:23:31 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+    },
+    "nodeVersion": {
+      "command": "node -v",
+      "exitCode": 0,
+      "output": "v24.22.1"
+    },
+    "npmVersion": {
+      "command": "npm -v",
+      "exitCode": 0,
+      "output": "10.9.4"
+    },
+    "pythonVersion": {
+      "command": "python3 --version",
+      "exitCode": 0,
+      "output": "Python 3.12.3"
+    },
+    "gitVersion": {
+      "command": "git --version",
+      "exitCode": 0,
+      "output": "git version 2.43.0"
+    },
+    "nodePlatform": {
+      "command": "node -p process.platform + ' ' + process.arch",
+      "exitCode": 0,
+      "output": "linux x64"
+    },
+    "pythonDetail": {
+      "command": "python3 -c import os,sys; print(sys.version); print(os.path.realpath('.'))",
+      "exitCode": 0,
+      "output": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\n/home/hatch/workspace/p023-skillscope"
+    },
+    "pyYaml": {
+      "command": "python3 -c import yaml; print(yaml.__version__)",
+      "exitCode": 0,
+      "output": "6.0.1"
+    },
+    "nodeToml": {
+      "command": "node -e console.log(process.getBuiltinModule('node:toml') ? 'present' : 'absent')",
+      "exitCode": 0,
+      "output": "absent"
+    },
+    "npmRegistry": {
+      "command": "npm view typescript version",
+      "exitCode": 0,
+      "output": "7.0.2"
+    }
+  },
+  "cpu": {
+    "count": 4,
+    "model": "AMD EPYC 9D25 126-Core Processor"
+  },
+  "memory": {
+    "totalBytes": 8319893504,
+    "freeBytes": 640999424
+  },
+  "disk": {
+    "blockSize": 4096,
+    "totalBytes": 161042399232,
+    "freeBytes": 140978937856,
+    "availableBytes": 139979546624
+  },
+  "browsers": {
+    "chromium": null,
+    "chromium-browser": null,
+    "google-chrome": null,
+    "firefox": null
+  },
+  "registryReachable": true
+}

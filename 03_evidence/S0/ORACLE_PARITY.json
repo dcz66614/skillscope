@@ -1,0 +1,201 @@
+{
+  "schema": "skillscope.oracle-parity/v1",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "base_commit": "5175eb873fc9367829067f739c74aeef8128edd4",
+  "parity": "48/48",
+  "gate_sha256": "a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca",
+  "results": [
+    {
+      "fixture_id": "codex/c01-repo-discovery",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c02-user-admin-system",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c03-path-selector",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c04-name-selector-blast",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c05-last-match-wins",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c06-symlink-alias",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c07-bundled-disabled",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c08-unreadable-config",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c09-name-selector-single",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c10-same-name-coexist",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c11-missing-user-source",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c12-missing-system-inventory",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c13-missing-plugin-inventory",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c14-name-blast-three-scopes",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c15-mixed-name-path-order",
+      "parity": true
+    },
+    {
+      "fixture_id": "codex/c16-path-selector-wrong-target",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c01-basic",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c02-root-nested-coexist",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c03-plugin-namespace",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c04-adddir-and-sync",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c05-name-override-blast",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c06-sync-unenumerated",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c07-nested-scope-leak",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c08-invalid-manifest",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c09-enterprise-personal-same-name",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c10-plugin-override-scoped",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c11-adddir-unvisited-nested",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c12-duplicate-content-p2",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c13-enterprise-scope-leak",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c14-plugin-namespace-flattened",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c15-adddir-missing-required",
+      "parity": true
+    },
+    {
+      "fixture_id": "claude/c16-override-blast-three-scopes",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o01-optout",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o02-user-skills-on",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o03-no-config-defaults",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o04-imported-clean",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o05-optout-corrupt",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o06-imported-original-active",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o07-native-name-blast",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o08-plugin-no-switch",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o09-library-off-discovered",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o10-disabled-plugin-ids",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o11-optout-empty-list",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o12-user-skills-off-discovered",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o13-unknown-snapshot-version",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o14-missing-snapshot-skill-dir",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o15-invalid-config-json",
+      "parity": true
+    },
+    {
+      "fixture_id": "openmausbot/o16-shared-library-scope-leak",
+      "parity": true
+    }
+  ]
+}

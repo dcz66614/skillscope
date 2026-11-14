@@ -1,0 +1,342 @@
+{
+  "fixtures": [
+    {
+      "defect": null,
+      "dir": "codex/c01-repo-discovery",
+      "engine": "codex",
+      "fixture_id": "codex/c01-repo-discovery",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c02-user-admin-system",
+      "engine": "codex",
+      "fixture_id": "codex/c02-user-admin-system",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c03-path-selector",
+      "engine": "codex",
+      "fixture_id": "codex/c03-path-selector",
+      "kind": "control"
+    },
+    {
+      "defect": "name-selector-blast-radius",
+      "dir": "codex/c04-name-selector-blast",
+      "engine": "codex",
+      "fixture_id": "codex/c04-name-selector-blast",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c05-last-match-wins",
+      "engine": "codex",
+      "fixture_id": "codex/c05-last-match-wins",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c06-symlink-alias",
+      "engine": "codex",
+      "fixture_id": "codex/c06-symlink-alias",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c07-bundled-disabled",
+      "engine": "codex",
+      "fixture_id": "codex/c07-bundled-disabled",
+      "kind": "control"
+    },
+    {
+      "defect": "fail-open-config",
+      "dir": "codex/c08-unreadable-config",
+      "engine": "codex",
+      "fixture_id": "codex/c08-unreadable-config",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c09-name-selector-single",
+      "engine": "codex",
+      "fixture_id": "codex/c09-name-selector-single",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "codex/c10-same-name-coexist",
+      "engine": "codex",
+      "fixture_id": "codex/c10-same-name-coexist",
+      "kind": "control"
+    },
+    {
+      "defect": "source-not-enumerated-user",
+      "dir": "codex/c11-missing-user-source",
+      "engine": "codex",
+      "fixture_id": "codex/c11-missing-user-source",
+      "kind": "planted"
+    },
+    {
+      "defect": "source-not-enumerated-system",
+      "dir": "codex/c12-missing-system-inventory",
+      "engine": "codex",
+      "fixture_id": "codex/c12-missing-system-inventory",
+      "kind": "planted"
+    },
+    {
+      "defect": "source-not-enumerated-plugin",
+      "dir": "codex/c13-missing-plugin-inventory",
+      "engine": "codex",
+      "fixture_id": "codex/c13-missing-plugin-inventory",
+      "kind": "planted"
+    },
+    {
+      "defect": "name-selector-blast-radius",
+      "dir": "codex/c14-name-blast-three-scopes",
+      "engine": "codex",
+      "fixture_id": "codex/c14-name-blast-three-scopes",
+      "kind": "planted"
+    },
+    {
+      "defect": "last-match-order",
+      "dir": "codex/c15-mixed-name-path-order",
+      "engine": "codex",
+      "fixture_id": "codex/c15-mixed-name-path-order",
+      "kind": "planted"
+    },
+    {
+      "defect": "path-selector-wrong-target",
+      "dir": "codex/c16-path-selector-wrong-target",
+      "engine": "codex",
+      "fixture_id": "codex/c16-path-selector-wrong-target",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c01-basic",
+      "engine": "claude-code",
+      "fixture_id": "claude/c01-basic",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c02-root-nested-coexist",
+      "engine": "claude-code",
+      "fixture_id": "claude/c02-root-nested-coexist",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c03-plugin-namespace",
+      "engine": "claude-code",
+      "fixture_id": "claude/c03-plugin-namespace",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c04-adddir-and-sync",
+      "engine": "claude-code",
+      "fixture_id": "claude/c04-adddir-and-sync",
+      "kind": "control"
+    },
+    {
+      "defect": "name-selector-blast-radius",
+      "dir": "claude/c05-name-override-blast",
+      "engine": "claude-code",
+      "fixture_id": "claude/c05-name-override-blast",
+      "kind": "planted"
+    },
+    {
+      "defect": "source-not-enumerated-account-sync",
+      "dir": "claude/c06-sync-unenumerated",
+      "engine": "claude-code",
+      "fixture_id": "claude/c06-sync-unenumerated",
+      "kind": "planted"
+    },
+    {
+      "defect": "scope-leak-nested",
+      "dir": "claude/c07-nested-scope-leak",
+      "engine": "claude-code",
+      "fixture_id": "claude/c07-nested-scope-leak",
+      "kind": "planted"
+    },
+    {
+      "defect": "invalid-manifest",
+      "dir": "claude/c08-invalid-manifest",
+      "engine": "claude-code",
+      "fixture_id": "claude/c08-invalid-manifest",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c09-enterprise-personal-same-name",
+      "engine": "claude-code",
+      "fixture_id": "claude/c09-enterprise-personal-same-name",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c10-plugin-override-scoped",
+      "engine": "claude-code",
+      "fixture_id": "claude/c10-plugin-override-scoped",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c11-adddir-unvisited-nested",
+      "engine": "claude-code",
+      "fixture_id": "claude/c11-adddir-unvisited-nested",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "claude/c12-duplicate-content-p2",
+      "engine": "claude-code",
+      "fixture_id": "claude/c12-duplicate-content-p2",
+      "kind": "control"
+    },
+    {
+      "defect": "scope-leak-enterprise",
+      "dir": "claude/c13-enterprise-scope-leak",
+      "engine": "claude-code",
+      "fixture_id": "claude/c13-enterprise-scope-leak",
+      "kind": "planted"
+    },
+    {
+      "defect": "plugin-namespace-flattened",
+      "dir": "claude/c14-plugin-namespace-flattened",
+      "engine": "claude-code",
+      "fixture_id": "claude/c14-plugin-namespace-flattened",
+      "kind": "planted"
+    },
+    {
+      "defect": "source-not-enumerated-add-dir",
+      "dir": "claude/c15-adddir-missing-required",
+      "engine": "claude-code",
+      "fixture_id": "claude/c15-adddir-missing-required",
+      "kind": "planted"
+    },
+    {
+      "defect": "name-selector-blast-radius",
+      "dir": "claude/c16-override-blast-three-scopes",
+      "engine": "claude-code",
+      "fixture_id": "claude/c16-override-blast-three-scopes",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o01-optout",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o01-optout",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o02-user-skills-on",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o02-user-skills-on",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o03-no-config-defaults",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o03-no-config-defaults",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o04-imported-clean",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o04-imported-clean",
+      "kind": "control"
+    },
+    {
+      "defect": "fail-open-opt-out",
+      "dir": "openmausbot/o05-optout-corrupt",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o05-optout-corrupt",
+      "kind": "planted"
+    },
+    {
+      "defect": "import-original-path-still-active",
+      "dir": "openmausbot/o06-imported-original-active",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o06-imported-original-active",
+      "kind": "planted"
+    },
+    {
+      "defect": "name-selector-blast-radius",
+      "dir": "openmausbot/o07-native-name-blast",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o07-native-name-blast",
+      "kind": "planted"
+    },
+    {
+      "defect": "scope-leak-plugin",
+      "dir": "openmausbot/o08-plugin-no-switch",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o08-plugin-no-switch",
+      "kind": "planted"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o09-library-off-discovered",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o09-library-off-discovered",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o10-disabled-plugin-ids",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o10-disabled-plugin-ids",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o11-optout-empty-list",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o11-optout-empty-list",
+      "kind": "control"
+    },
+    {
+      "defect": null,
+      "dir": "openmausbot/o12-user-skills-off-discovered",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o12-user-skills-off-discovered",
+      "kind": "control"
+    },
+    {
+      "defect": "unknown-snapshot-version",
+      "dir": "openmausbot/o13-unknown-snapshot-version",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o13-unknown-snapshot-version",
+      "kind": "planted"
+    },
+    {
+      "defect": "source-not-enumerated-snapshot-skill",
+      "dir": "openmausbot/o14-missing-snapshot-skill-dir",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o14-missing-snapshot-skill-dir",
+      "kind": "planted"
+    },
+    {
+      "defect": "fail-open-config",
+      "dir": "openmausbot/o15-invalid-config-json",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o15-invalid-config-json",
+      "kind": "planted"
+    },
+    {
+      "defect": "scope-leak-shared-library",
+      "dir": "openmausbot/o16-shared-library-scope-leak",
+      "engine": "openmausbot",
+      "fixture_id": "openmausbot/o16-shared-library-scope-leak",
+      "kind": "planted"
+    }
+  ],
+  "schema": "skillscope.s0-manifest/v1",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13"
+}

@@ -1,0 +1,18 @@
+{
+  "cwd": ".",
+  "profileId": "c15-adddir-missing-required",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./adddir",
+      "required": true,
+      "scope": "ADD_DIR",
+      "sourceRootId": "adddir"
+    }
+  ]
+}

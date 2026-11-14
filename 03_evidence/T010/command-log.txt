@@ -1,0 +1,12 @@
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/codex-fail/profile.json --out /tmp/skillscope-t010-IEwQ0o/codex-fail.normal.json → exit 1 (expected 1), stdout lines: 8
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/codex-fail/profile.json --ci --out /tmp/skillscope-t010-IEwQ0o/codex-fail.ci.json → exit 1 (expected 1), stdout lines: 1
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/claude-pass/profile.json --out /tmp/skillscope-t010-IEwQ0o/claude-pass.normal.json → exit 0 (expected 0), stdout lines: 6
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/claude-pass/profile.json --ci --out /tmp/skillscope-t010-IEwQ0o/claude-pass.ci.json → exit 0 (expected 0), stdout lines: 1
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/openmausbot-incomplete/profile.json --out /tmp/skillscope-t010-IEwQ0o/openmausbot-incomplete.normal.json → exit 2 (expected 2), stdout lines: 5
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/openmausbot-incomplete/profile.json --ci --out /tmp/skillscope-t010-IEwQ0o/openmausbot-incomplete.ci.json → exit 2 (expected 2), stdout lines: 1
+$ node dist/cli/index.js audit --profile /tmp/skillscope-t010-IEwQ0o/nope.json --ci --out /tmp/skillscope-t010-IEwQ0o/x.json → exit 3 (expected 3)
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/claude-pass/profile.json --ci --out /tmp/skillscope-t010-IEwQ0o/no-such-dir/out.json → exit 4 (expected 4)
+$ node dist/cli/index.js init --ci --dir /tmp/skillscope-t010-IEwQ0o → exit 3 (expected 3)
+$ node dist/cli/index.js audit --profile /home/hatch/workspace/p023-skillscope/tests/fixtures/demo/codex-fail/profile.json --ci --bogus → exit 3 (expected 3)
+readme screenshot: ok: /home/hatch/workspace/p023-skillscope/03_evidence/T010/readme-first-screen.png (213564 bytes)
+matrix: 10 entries, all measured exit codes match the contract

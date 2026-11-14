@@ -1,0 +1,9 @@
+{
+  "version": "openmausbot-snapshot/v1",
+  "loadableRoots": [],
+  "emptyLists": ["plugin"],
+  "skills": [
+    { "kind": "assigned", "name": "release", "path": "./assigned/release" },
+    { "kind": "imported", "name": "docs", "path": "./imported/docs", "importState": "active" }
+  ]
+}

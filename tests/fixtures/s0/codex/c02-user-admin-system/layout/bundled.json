@@ -1,0 +1,12 @@
+{
+  "skills": [
+    {
+      "name": "pdf",
+      "content": "Bundled PDF skill. Reads and writes PDF documents."
+    },
+    {
+      "name": "docx",
+      "content": "Bundled DOCX skill. Reads and writes Word documents."
+    }
+  ]
+}

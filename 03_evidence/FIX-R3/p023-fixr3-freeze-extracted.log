@@ -1,0 +1,12 @@
+
+> skillscope@0.1.0 verify:extracted-tree
+> node ./scripts/verify-extracted-tree.mjs
+
+work dir: /tmp/skillscope-extract-R0QZL2
+[PASS] extract source.zip
+[PASS] extracted tree has package.json + src + tests
+[PASS] extracted directory set matches working tree (1204 dirs) — missing: ; extra: 
+[PASS] extracted-tree npm run build
+[PASS] extracted-tree r1 + r2 regression suites — exit 0; [2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m | [2m      Tests [22m [1m[32m27 passed[39m[22m[90m (27)[39m
+[PASS] extracted-tree full npm test — exit 0; [2m Test Files [22m [1m[32m33 passed[39m[22m[90m (33)[39m | [2m      Tests [22m [1m[32m573 passed[39m[22m[90m (573)[39m
+verify-extracted-tree PASS — 0 failure(s): 

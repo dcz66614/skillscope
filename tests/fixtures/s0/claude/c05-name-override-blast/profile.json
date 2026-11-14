@@ -1,0 +1,21 @@
+{
+  "cwd": ".",
+  "profileId": "c05-name-override-blast",
+  "skillOverrides": {
+    "deploy": "off"
+  },
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./personal",
+      "required": true,
+      "scope": "PERSONAL",
+      "sourceRootId": "personal"
+    }
+  ]
+}

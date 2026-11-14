@@ -1,0 +1,131 @@
+{
+  "schema": "skillscope.source-graph/v1",
+  "roots": [
+    {
+      "sourceRootId": "repo",
+      "engine": "codex",
+      "sourceScope": "REPO"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "0b0858fd7c21852b26996c390fa21dedf3879f4e92b400a78d1a7791f935092d",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "alias/SKILL.md",
+      "logicalName": "release",
+      "contentSha256": "8619a35cc3813947ff4d6c318f61eb9a1bbed7ea6f865ea419206448a0564241",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "22a4c0115ae0bca62d516f5407e2e780092b208d8c4dbabebe8aa88ae77b68b0",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "deploy/SKILL.md",
+      "logicalName": "deploy",
+      "contentSha256": "ff8b2abf4ddf8d9ac48d65d41b9440d37252bc457754c55b985b6d8bab73e90c",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "8431cc586e90c8d3cae4f0d6c403ac737a66a0cf9266d84b3c6f586f4bf67c2b",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "Deploy/SKILL.md",
+      "logicalName": "deploy",
+      "contentSha256": "9271a2b3960663ac7bb0a10a1f502790ef51a26a058c0c495be6b8f72560150f",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "b645a3779d40a54e4d153f3ef779f0f24110a9bf7698cb2c0fa556d9bd56f922",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "bad/SKILL.md",
+      "logicalName": "bad",
+      "contentSha256": "22f65479e873b2b0b72fa7580c2c357d9a9ea5f334af7aa52b4a04cfb5424cd0",
+      "status": "INVALID"
+    },
+    {
+      "id": "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "copy-a/SKILL.md",
+      "logicalName": "copy-shared",
+      "contentSha256": "61985ebea1ef7ba4d15d3ab06f861c0c268a49698027a3b61b4e4b46619cae2d",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d",
+      "kind": "instance",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "copy-b/SKILL.md",
+      "logicalName": "copy-shared",
+      "contentSha256": "61985ebea1ef7ba4d15d3ab06f861c0c268a49698027a3b61b4e4b46619cae2d",
+      "status": "ELIGIBLE"
+    },
+    {
+      "id": "root:repo",
+      "kind": "root",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO"
+    }
+  ],
+  "edges": [
+    {
+      "from": "root:repo",
+      "to": "0b0858fd7c21852b26996c390fa21dedf3879f4e92b400a78d1a7791f935092d",
+      "kind": "ALIAS",
+      "path": "release/SKILL.md"
+    },
+    {
+      "from": "root:repo",
+      "to": "0b0858fd7c21852b26996c390fa21dedf3879f4e92b400a78d1a7791f935092d",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "root:repo",
+      "to": "22a4c0115ae0bca62d516f5407e2e780092b208d8c4dbabebe8aa88ae77b68b0",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "root:repo",
+      "to": "8431cc586e90c8d3cae4f0d6c403ac737a66a0cf9266d84b3c6f586f4bf67c2b",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "root:repo",
+      "to": "b645a3779d40a54e4d153f3ef779f0f24110a9bf7698cb2c0fa556d9bd56f922",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "root:repo",
+      "to": "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "root:repo",
+      "to": "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d",
+      "kind": "CONTAINS"
+    },
+    {
+      "from": "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+      "to": "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d",
+      "kind": "DUPLICATE_CONTENT"
+    },
+    {
+      "from": "22a4c0115ae0bca62d516f5407e2e780092b208d8c4dbabebe8aa88ae77b68b0",
+      "to": "8431cc586e90c8d3cae4f0d6c403ac737a66a0cf9266d84b3c6f586f4bf67c2b",
+      "kind": "SAME_NAME"
+    },
+    {
+      "from": "ba15b6c50bc0a43fb394f3f7bc2f9f9f5c3773a6b191543d2eae978adaeeca17",
+      "to": "d5d8731a29bb84dfa70d1fbb0da0ea47ed9ed6a7905ead34b6a9f665b4b3675d",
+      "kind": "SAME_NAME"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "cwd": ".",
+  "profileId": "c01-basic",
+  "sourceRoots": [
+    {
+      "path": "./enterprise",
+      "required": true,
+      "scope": "ENTERPRISE",
+      "sourceRootId": "enterprise"
+    },
+    {
+      "path": "./personal",
+      "required": true,
+      "scope": "PERSONAL",
+      "sourceRootId": "personal"
+    },
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    }
+  ]
+}

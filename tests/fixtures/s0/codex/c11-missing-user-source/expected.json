@@ -1,0 +1,39 @@
+{
+  "caseId": "c11-missing-user-source",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 4,
+    "requiredSources": 5
+  },
+  "findings": [
+    {
+      "detail": "USER source could not be enumerated; absence is not evidence of absence",
+      "id": "SOURCE_NOT_ENUMERATED",
+      "severity": "P1",
+      "sourceScope": "USER",
+      "status": "UNKNOWN"
+    }
+  ],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/release/SKILL.md",
+      "canonicalPathHash": "c23835b432702343a75f7692f7057f63646a1b96412db8bc918d7cad264b5a95",
+      "contentSha256": "ec32f4e726bb7ab15f4258c5adcc5345acb82ef82b483a5b6d08b5658fbc809d",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "release",
+      "instanceId": "codex:repo:repo/.agents/skills/release/SKILL.md",
+      "logicalName": "release",
+      "manifestName": "release",
+      "relativePath": ".agents/skills/release/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE",
+  "unknownSources": [
+    "USER"
+  ]
+}

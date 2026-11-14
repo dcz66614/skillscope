@@ -1,0 +1,24 @@
+{
+  "cwd": ".",
+  "policy": {
+    "forbiddenScopes": [
+      "NESTED"
+    ]
+  },
+  "profileId": "c07-nested-scope-leak",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./nested",
+      "required": true,
+      "scope": "NESTED",
+      "sourceRootId": "nested",
+      "visited": true
+    }
+  ]
+}

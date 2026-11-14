@@ -1,0 +1,68 @@
+{
+  "caseId": "c14-name-blast-three-scopes",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "findings": [
+    {
+      "affectedCount": 3,
+      "detail": "name selector \"deploy\" affects 3 distinct instances",
+      "id": "NAME_SELECTOR_BLAST_RADIUS",
+      "severity": "P1",
+      "sourceScope": "GLOBAL",
+      "status": "CONFIRMED"
+    }
+  ],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "ad444cf0fb1d5e588213c414bdc3f0410d365b256af5fdbeab8552cede7c7113",
+      "contentSha256": "ba20ab8d8c36479e4c1fbbac32495879a93e46976de5708e6431f36c7aeb55ad",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:repo:repo/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "DISABLED"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "home/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "77e83175ed899611374fba4a20a6954b22123a9a62b20f00a294e5c1c001b4bd",
+      "contentSha256": "8aa2a301c6d84d998b990db086560a12b1eee2169edb9d15de8ff6e22819d840",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:user:home/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "status": "DISABLED"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "etc-codex/skills/deploy/SKILL.md",
+      "canonicalPathHash": "d6ae95a5ebe07d1e6dc6a90c0543a06a9acec46ada8288fc132ddd226d4f3910",
+      "contentSha256": "648a53059558a1dd6aff0d30b41d60af29fb45a82ad00f428353be3528501816",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:admin:etc-codex/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": "skills/deploy/SKILL.md",
+      "sourceRootId": "admin",
+      "sourceScope": "ADMIN",
+      "status": "DISABLED"
+    }
+  ],
+  "status": "FAIL",
+  "unknownSources": []
+}

@@ -1,0 +1,53 @@
+{
+  "description": "SkillScope — read-only skill scope resolution and isolation-consistency verification for Codex, Claude Code and OpenMausBot (P023).",
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT",
+  "name": "skillscope",
+  "private": true,
+  "bin": {
+    "skillscope": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "demo": "node ./scripts/demo.mjs",
+    "release:build": "node ./scripts/release-build.mjs",
+    "release:verify": "node ./scripts/release-verify.mjs",
+    "s0:gate": "node ./scripts/s0-gate.mjs",
+    "s0:repeat": "node ./scripts/repeat-hash.mjs",
+    "test": "vitest run",
+    "test:ci": "vitest run tests/ci",
+    "test:claude": "vitest run tests/claude",
+    "test:cli": "vitest run tests/cli",
+    "test:codex": "vitest run tests/codex",
+    "test:e2e": "node ./scripts/e2e.mjs",
+    "test:hash": "vitest run tests/hash",
+    "test:identity": "vitest run tests/identity",
+    "test:io": "vitest run tests/io",
+    "test:manifest": "vitest run tests/manifest",
+    "test:mutation": "node ./scripts/mutation-test.mjs",
+    "test:offline": "node ./scripts/offline-check.mjs",
+    "test:openmausbot": "vitest run tests/openmausbot",
+    "test:oracle": "python3 -m unittest discover -s oracle/tests",
+    "test:performance": "node ./scripts/performance.mjs",
+    "test:privacy": "vitest run tests/privacy",
+    "test:property": "node ./scripts/property-test.mjs",
+    "test:rules": "vitest run tests/rules",
+    "test:symlink": "vitest run tests/symlink",
+    "typecheck": "tsc --noEmit",
+    "verify:all": "node ./scripts/verify-all.mjs",
+    "verify:extracted-tree": "node ./scripts/verify-extracted-tree.mjs"
+  },
+  "type": "module",
+  "version": "0.1.0",
+  "dependencies": {
+    "smol-toml": "1.9.1",
+    "yaml": "2.9.1"
+  }
+}

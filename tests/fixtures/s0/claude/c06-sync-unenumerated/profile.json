@@ -1,0 +1,18 @@
+{
+  "cwd": ".",
+  "profileId": "c06-sync-unenumerated",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "",
+      "required": true,
+      "scope": "ACCOUNT_SYNC",
+      "sourceRootId": "sync"
+    }
+  ]
+}

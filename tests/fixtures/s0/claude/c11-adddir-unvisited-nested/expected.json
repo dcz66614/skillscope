@@ -1,0 +1,16 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [],
+  "instances": [
+    {
+      "logicalName": "deploy",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

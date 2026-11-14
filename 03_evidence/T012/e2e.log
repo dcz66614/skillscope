@@ -1,0 +1,28 @@
+[PASS] codex-fail: json exit 1 (expected 1)
+[PASS] codex-fail: html exit 1 (expected 1)
+[PASS] codex-fail: report status FAIL (expected FAIL)
+[PASS] codex-fail: JSON validates against skillscope.report/v1
+[PASS] codex-fail: audit_sha256 present
+[PASS] codex-fail: embedded JSON byte-identical to canonical JSON report
+[PASS] codex-fail: HTML external resources 0
+[PASS] codex-fail: HTML contains the status meaning text
+[PASS] claude-pass: json exit 0 (expected 0)
+[PASS] claude-pass: html exit 0 (expected 0)
+[PASS] claude-pass: report status PASS (expected PASS)
+[PASS] claude-pass: JSON validates against skillscope.report/v1
+[PASS] claude-pass: audit_sha256 present
+[PASS] claude-pass: embedded JSON byte-identical to canonical JSON report
+[PASS] claude-pass: HTML external resources 0
+[PASS] claude-pass: HTML contains the status meaning text
+[PASS] openmausbot-incomplete: json exit 2 (expected 2)
+[PASS] openmausbot-incomplete: html exit 2 (expected 2)
+[PASS] openmausbot-incomplete: report status INCOMPLETE (expected INCOMPLETE)
+[PASS] openmausbot-incomplete: JSON validates against skillscope.report/v1
+[PASS] openmausbot-incomplete: audit_sha256 present
+[PASS] openmausbot-incomplete: embedded JSON byte-identical to canonical JSON report
+[PASS] openmausbot-incomplete: HTML external resources 0
+[PASS] openmausbot-incomplete: HTML contains the status meaning text
+[PASS] determinism: codex-fail audited twice → identical JSON bytes
+[PASS] verify --fixtures s0 exits 0 (S0 gate still green) — exit 0
+[PASS] screenshot codex-fail HTML report — ok: /home/hatch/workspace/p023-skillscope/03_evidence/T012/e2e-codex-fail.png (136209 bytes)
+[PASS] fixture trees byte-identical before/after (0 source writes)

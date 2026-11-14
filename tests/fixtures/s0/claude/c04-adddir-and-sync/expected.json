@@ -1,0 +1,21 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [],
+  "instances": [
+    {
+      "logicalName": "helper",
+      "sourceScope": "ADD_DIR",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "synced-docs",
+      "sourceScope": "ACCOUNT_SYNC",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

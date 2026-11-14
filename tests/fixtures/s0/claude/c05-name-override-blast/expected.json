@@ -1,0 +1,24 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "NAME_SELECTOR_BLAST_RADIUS",
+    "SAME_NAME_COLLISION"
+  ],
+  "instances": [
+    {
+      "logicalName": "deploy",
+      "sourceScope": "PROJECT",
+      "status": "DISABLED"
+    },
+    {
+      "logicalName": "deploy",
+      "sourceScope": "PERSONAL",
+      "status": "DISABLED"
+    }
+  ],
+  "status": "FAIL"
+}

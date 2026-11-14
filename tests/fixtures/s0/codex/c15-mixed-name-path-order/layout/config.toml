@@ -1,0 +1,7 @@
+[[skills.config]]
+name = "deploy"
+enabled = false
+
+[[skills.config]]
+path = "__CASE_DIR__/repo/.agents/skills/deploy/SKILL.md"
+enabled = true

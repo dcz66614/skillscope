@@ -1,0 +1,22 @@
+{
+  "cwd": ".",
+  "profileId": "c14-plugin-namespace-flattened",
+  "skillOverrides": {
+    "deploy": "off"
+  },
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./plugin-acme",
+      "required": true,
+      "scope": "PLUGIN",
+      "sourceRootId": "plugin-acme",
+      "pluginName": "acme"
+    }
+  ]
+}

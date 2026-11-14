@@ -1,0 +1,44 @@
+{
+  "caseId": "c16-path-selector-wrong-target",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "findings": [],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "ad444cf0fb1d5e588213c414bdc3f0410d365b256af5fdbeab8552cede7c7113",
+      "contentSha256": "8404fee4a175804b25ea78d6b3ea0adfeee7cb77cc3c35b685e57da2734fbe27",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:repo:repo/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "DISABLED"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "repo/a/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "f1b3adb595e298e7dde1365af15eb2484761ad9b5a4edddd8296212016ff31e1",
+      "contentSha256": "64d7f9b906deb56ef65b9ce943b98eb813e0de80ee976681584663141780c94a",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:repo:repo/a/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": "a/.agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS",
+  "unknownSources": []
+}

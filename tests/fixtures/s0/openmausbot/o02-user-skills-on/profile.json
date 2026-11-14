@@ -1,0 +1,26 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o02-user-skills-on",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "user-claude",
+        "name": "my-notes",
+        "path": "./user-claude/my-notes"
+      },
+      {
+        "kind": "library",
+        "name": "every-docs",
+        "path": "./library/every-docs"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

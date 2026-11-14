@@ -1,0 +1,136 @@
+{
+  "description": "Canonical JSON vectors for T008b (frozen). `expectedCanonical` is the exact byte string `canonicalizeJson(input)` must produce; `expectedSha256` is the SHA-256 of its UTF-8 bytes. Hashes were generated once from the frozen canonical strings and are independently reproduced by the Python cross-check in scripts/hash-privacy-evidence.mjs — the fixture does not move if the implementation changes.",
+  "vectors": [
+    {
+      "expectedCanonical": "{\"a\":2,\"b\":1}",
+      "expectedSha256": "d3626ac30a87e6f7a6428233b3c68299976865fa5508e4267c5415c76af7a772",
+      "input": {
+        "a": 2,
+        "b": 1
+      },
+      "name": "key-order"
+    },
+    {
+      "expectedCanonical": "{\"a\":null,\"z\":{\"a\":\"x\",\"b\":[3,2,1]}}",
+      "expectedSha256": "e7e2131d335379d554cdc78a265735ed098c04a76dceb16d72e544ea7f1159ae",
+      "input": {
+        "a": null,
+        "z": {
+          "a": "x",
+          "b": [
+            3,
+            2,
+            1
+          ]
+        }
+      },
+      "name": "nested-object-array"
+    },
+    {
+      "expectedCanonical": "{\"café\":1}",
+      "expectedSha256": "4ba6f859a6604763e30e1afc74dd00bf3b245be58d902b5d1ae0eaa119e8a141",
+      "input": {
+        "café": 1
+      },
+      "name": "nfc-key"
+    },
+    {
+      "expectedCanonical": "{\"v\":\"é\"}",
+      "expectedSha256": "60331ad111b2a28c0a0eb4b64cfd0ee20df99e19513cf4045cf572b96973ed14",
+      "input": {
+        "v": "é"
+      },
+      "name": "nfc-value"
+    },
+    {
+      "expectedCanonical": "{\"a\":[3,1,2]}",
+      "expectedSha256": "d934227f5a9f29b31bd6a8ceed3213dd498a07ce32bdfa9ae2488de0c0ab68f1",
+      "input": {
+        "a": [
+          3,
+          1,
+          2
+        ]
+      },
+      "name": "array-order-preserved"
+    },
+    {
+      "expectedCanonical": "{\"￿\":1,\"𐀀\":2}",
+      "expectedSha256": "5d0565db2590e7475bdf0f43c32a52eafabf71219c8a4aa8bf2099d799cefd0c",
+      "input": {
+        "￿": 1,
+        "𐀀": 2
+      },
+      "name": "astral-key-order-codepoint"
+    },
+    {
+      "expectedCanonical": "{\"a\":0}",
+      "expectedSha256": "45b619e97b5d9b029af4522e9ffb02fa99ff2bf226c82ee22a7cc10269a557e8",
+      "input": {
+        "a": 0
+      },
+      "name": "negative-zero"
+    },
+    {
+      "expectedCanonical": "{}",
+      "expectedSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "input": {},
+      "name": "empty-object"
+    },
+    {
+      "expectedCanonical": "[]",
+      "expectedSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "input": [],
+      "name": "empty-array"
+    },
+    {
+      "expectedCanonical": "{\"emoji\":\"😀\"}",
+      "expectedSha256": "4525cb52c6a0122eacc150bacd11eb4a1d4615485ca8a5639c28d70f1c240193",
+      "input": {
+        "emoji": "😀"
+      },
+      "name": "unicode-value"
+    },
+    {
+      "expectedCanonical": "{\"n\":[1.5,-2,1000]}",
+      "expectedSha256": "7fecc80ab70858c32e5092765fed98530ce4155b76249f0c3dd78a39e0d04a1a",
+      "input": {
+        "n": [
+          1.5,
+          -2,
+          1000
+        ]
+      },
+      "name": "numbers"
+    },
+    {
+      "expectedCanonical": "{\"contentSha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"instanceId\":\"repo:skills/deploy\",\"logicalName\":\"deploy\",\"status\":\"ELIGIBLE\"}",
+      "expectedSha256": "0add13d462e2e77772f2df5b30179428a4ce201d599da9798037390f4333a8e3",
+      "input": {
+        "contentSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "instanceId": "repo:skills/deploy",
+        "logicalName": "deploy",
+        "status": "ELIGIBLE"
+      },
+      "name": "skill-instance"
+    },
+    {
+      "expectedCanonical": "true",
+      "expectedSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "input": true,
+      "name": "bare-boolean"
+    },
+    {
+      "expectedCanonical": "\"hello\"",
+      "expectedSha256": "5aa762ae383fbb727af3c7a36d4940a5b8c40a989452d2304fc958ff3f354e7a",
+      "input": "hello",
+      "name": "bare-string"
+    },
+    {
+      "expectedCanonical": "null",
+      "expectedSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "input": null,
+      "name": "bare-null"
+    }
+  ]
+}

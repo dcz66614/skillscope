@@ -1,0 +1,59 @@
+{
+  "caseId": "c10-same-name-coexist",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "findings": [],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "ad444cf0fb1d5e588213c414bdc3f0410d365b256af5fdbeab8552cede7c7113",
+      "contentSha256": "6f35fa81b73258e399e20e212ebafde5dc5fe74010b30041c58109883f330608",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:repo:repo/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "ELIGIBLE"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "home/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "77e83175ed899611374fba4a20a6954b22123a9a62b20f00a294e5c1c001b4bd",
+      "contentSha256": "0b0ba45c56173a92aa9d1855d32b82b83b5de9dc4857ff24e49111f891053df4",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:user:home/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "status": "ELIGIBLE"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "etc-codex/skills/deploy/SKILL.md",
+      "canonicalPathHash": "d6ae95a5ebe07d1e6dc6a90c0543a06a9acec46ada8288fc132ddd226d4f3910",
+      "contentSha256": "92113d145d0212d87f13fa5d53ffd46bffd49cdb737dfd29ba675ac173a0a3ba",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:admin:etc-codex/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": "skills/deploy/SKILL.md",
+      "sourceRootId": "admin",
+      "sourceScope": "ADMIN",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS",
+  "unknownSources": []
+}

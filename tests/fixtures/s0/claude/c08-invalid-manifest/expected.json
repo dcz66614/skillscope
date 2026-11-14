@@ -1,0 +1,18 @@
+{
+  "coverage": {
+    "enumeratedSources": 1,
+    "requiredSources": 1,
+    "unknownScopes": []
+  },
+  "findings": [
+    "INVALID_MANIFEST"
+  ],
+  "instances": [
+    {
+      "logicalName": "broken",
+      "sourceScope": "PROJECT",
+      "status": "INVALID"
+    }
+  ],
+  "status": "PASS"
+}

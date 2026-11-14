@@ -1,0 +1,21 @@
+task,stage,status,owner_commit,note
+T001,S0,PASS,611a723,环境探测、工程骨架与接口契约（验收 5/5，见 03_evidence/T001/T001_REPORT.md）
+T002,S0,PASS,aff08cb,Codex PoC（11/11；smol-toml 1.9.1；Muse 亲自验收）
+T003,S0,PASS,2716487,Claude + OpenMausBot PoC（13/13 + 13/13；Muse 亲自验收）
+T004,S0,PASS,97492fa,Python Oracle + S0 Gate（parity 48/48；检出 24/24；误报 0/24；gate a11d2a4c；Muse 亲自验收，见 coordinator-logs/muse-t004-verify.md）
+T005,S1,PASS,38f09ff,技能实例身份、来源图与 canonical path（identity 15/15；symlink 16/16；manifest 19/19；oracle 42/42；gate a11d2a4c 不变；见 03_evidence/T005/T005_REPORT.md）
+T006,S1,PASS,e9b8ae4,宿主规则引擎、策略比较与 Finding 分类（rules 103/103；48/48 cross-check vs S0 golden；oracle 42/42；gate a11d2a4c 不变；见 03_evidence/T006/RULE_ENGINE_REPORT.json）
+T007,S2,PASS,c8919a2,OpenMausBot 完整只读适配器（adapter 23/23；snapshot 17/17；oracle 42/42；gate a11d2a4c 不变；见 03_evidence/T007/T007_REPORT.md）
+T008,S2,PASS,bd2c63e,Claude 完整只读适配器（claude 54/54；oracle 42/42；gate a11d2a4c 不变；见 03_evidence/T008/T008_REPORT.md）
+T008b,S2,PASS,841e251,Snapshot I/O、隐私脱敏与规范化哈希（io 24/24；privacy 53/53；hash 39/39；oracle 42/42；gate a11d2a4c 不变；OPEN-004 已关闭；见 03_evidence/T008b/T008B_REPORT.md）
+T009,S3,PASS,53b9bb9,CLI 主流程与静态 HTML 报告（cli 13/13；demo 三态 1/0/2；外部资源 0；gate a11d2a4c 不变；见 03_evidence/T009/UI_REPORT.md）
+T010,S3,PASS,52d8d7b,CI 模式、退出码、README 与开箱 Demo（ci 8/8；offline PASS；demo 三态 1/0/2；gate a11d2a4c 不变；见 03_evidence/T010/T010_REPORT.md）
+T011,S4,PASS,cb9add4,Golden/Property/Mutation 回归（全量 512/512；property 10/10；mutation 20/20=100%；gate a11d2a4c 不变；见 03_evidence/T011/T011_REPORT.md）
+T012,S4,PASS,c1857ef,端到端/离线/性能/发布预演（全量 525/525，连续 5 次；e2e 28/28；性能 500 实例扫描 250 ms、HTML 294 ms、RSS 81.9 MiB；verify:all 8/8，连续 2 次；gate a11d2a4c 不变；.gitkeep 修复 23 空目录；并行竞态三轮修复；见 03_evidence/T012/T012_REPORT.md）
+T013,S5,PASS,a3ff7f4,独立代码、规则与证据复核（P0=0、P1=0、P2=10 非阻塞；核心文件 31 + 配置 10 全部 READ；ADR-005/006/015 核对通过；gate a11d2a4c 不变；见 03_evidence/T013/T013_REPORT.md）
+T014,S5,PASS,5887516,第四轮冻结、发布包与 SHA-256 清单（source.zip 5,611,624 B sha 15b90a4c…；dist.zip 513,226 B sha f405795b…；41 条目；release:build 39/39 + release:verify 57/57；verify:extracted-tree 对正式冻结产物 PASS 0 失败；gate a11d2a4c 不变；license MIT；review-inputs 769 行全 OK；冻结 commit 5887516；见 03_evidence/T014/T014_FREEZE_REPORT.md）
+FIX-R1,S5,PASS,98b06fd,终审 R1 返工：4 P0 + 4 P1 全部修复（P0-R1-01/02/03/04、P1-R1-01/02/03/04）+ 对齐项；回归 22/22 + Oracle 53/53；gate a11d2a4c 不变；LICENSE MIT；见 03_evidence/FIX-R1/FIX_R1_REPORT.md
+FIX-T013R,S5,PASS,4469d4c,T013 复审第二轮返工：新 P1-T013R-01（Codex symlink 逃逸守卫改测解析后路径，逃逸 → SYMLINK_OUTSIDE_ROOT P1/UNKNOWN + INCOMPLETE）+ P2-T013R-02（Oracle accountSyncDir 对齐 TS hasUnverifiable）；回归 TS 5/5 + Oracle 5/5；全量 563/563 + Oracle 58/58；gate a11d2a4c 不变；ADR-024/025；见 03_evidence/FIX-T013R/FIX_T013R_REPORT.md
+FIX-R2,S5,PASS,7cd1edb,终审 R2 返工：2 新 P1 全部修复（P1-R2-01 空目录丢失 25 个 .gitkeep + 冻结门禁与解压树重现；P1-R2-02 跨 scope 物理文件按 scope 分实例）+ 2 个解压树 harness 修复；回归 TS 4/4 + Oracle 4/4；全量 567/567 + Oracle 62/62；gate a11d2a4c 不变；解压树重现 0 失败（r1+r2 27/27 + 全量 567/567）；ADR-027/028；见 03_evidence/FIX-R2/FIX_R2_REPORT.md
+FIX-R3,S5,PASS,b89f786,终审 R3 返工：P1-R3-01（dist.zip 纳入 MIT LICENSE sha 50b8b302…；README License 改 MIT；package.json license MIT；release-build/verify 增加 dist LICENSE 存在性及 SHA 门禁）+ P2-R3-01（docs/ 随 dist 打包）；新回归 r4-license 6/6；全量 573/573 + Oracle 62/62；gate a11d2a4c 不变；verify:all 8/8；新 dist 513,226 B sha f405795b…；release:build 39/39 + release:verify 57/57；解压树重现 0 失败（r1+r2 27/27 + 全量 573/573）；见 03_evidence/FIX-R3/FIX_R3_REPORT.md
+ACCEPTED,S5,PASS,5887516,终审 R4 FINAL_VERDICT: PASS（2026-11-13 ~22:03 GMT；GPT-6 + Extra High；P0 0 / P1 0 / P2 12 非阻断；BLOCKERS: NONE）；冻结 commit 5887516，release 251eec3；判决 ~/workspace/p023-R4-verdict.md；完成通知 ~/workspace/p023-completion-notice.md；Drive 04_release 已归档并重下载核对；GitHub 待 Sam 批准

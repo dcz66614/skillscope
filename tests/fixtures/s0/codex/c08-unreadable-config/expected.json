@@ -1,0 +1,69 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c08-unreadable-config",
+  "status": "INCOMPLETE",
+  "skills": [
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/release/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/release/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/release/SKILL.md",
+      "logicalName": "release",
+      "folderName": "release",
+      "manifestName": "release",
+      "contentSha256": "c9671453d8fa650d7e9158ff384a8200777a0d21af26cecf01e7e83d487c5c3c",
+      "canonicalPathHash": "c23835b432702343a75f7692f7057f63646a1b96412db8bc918d7cad264b5a95",
+      "status": "UNKNOWN",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:user:home/.agents/skills/personal/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "relativePath": ".agents/skills/personal/SKILL.md",
+      "canonicalPath": "home/.agents/skills/personal/SKILL.md",
+      "logicalName": "personal",
+      "folderName": "personal",
+      "manifestName": "personal",
+      "contentSha256": "894192a4d4c7fc533a4d364a7cc5dd416f3493c94a5ab7de3a5c2df73d419e84",
+      "canonicalPathHash": "12afb9922219f479c77808c31fb31f09e809c1085c51a638afc7dc9adc857191",
+      "status": "UNKNOWN",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [
+    {
+      "id": "FAIL_OPEN_CONFIG",
+      "severity": "P1",
+      "sourceScope": "GLOBAL",
+      "status": "CONFIRMED",
+      "detail": "skills.config could not be read or parsed; effective set is unknown (fail closed)"
+    },
+    {
+      "id": "SOURCE_NOT_ENUMERATED",
+      "severity": "P1",
+      "sourceScope": "PLUGIN",
+      "status": "UNKNOWN",
+      "detail": "PLUGIN source could not be enumerated; absence is not evidence of absence"
+    },
+    {
+      "id": "SOURCE_NOT_ENUMERATED",
+      "severity": "P1",
+      "sourceScope": "SYSTEM",
+      "status": "UNKNOWN",
+      "detail": "SYSTEM source could not be enumerated; absence is not evidence of absence"
+    }
+  ],
+  "coverage": {
+    "enumeratedSources": 3,
+    "requiredSources": 5
+  },
+  "unknownSources": [
+    "SYSTEM",
+    "PLUGIN"
+  ],
+  "configReadable": false
+}

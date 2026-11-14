@@ -1,0 +1,8 @@
+{
+  "extraKnownMarketplaces": [
+    {
+      "name": "team-market",
+      "path": "./marketplace"
+    }
+  ]
+}

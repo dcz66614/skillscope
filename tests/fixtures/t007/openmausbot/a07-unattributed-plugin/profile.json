@@ -1,0 +1,14 @@
+{
+  "profileId": "a07-unattributed-plugin",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "emptyLists": ["imported"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" },
+      { "kind": "plugin", "name": "sites", "path": "./plugin/sites" }
+    ]
+  }
+}

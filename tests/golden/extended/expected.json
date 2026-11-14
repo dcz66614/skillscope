@@ -1,0 +1,398 @@
+{
+  "cases": [
+    {
+      "case_id": "x01",
+      "description": "Policy with both a forbidden scope and a forbidden name: the PLUGIN instance leaks and the REPO instance mismatches; only the USER instance is expected.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "DISABLE_MISMATCH",
+            "instanceIds": [
+              "repo:release/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "REPO",
+            "status": "CONFIRMED"
+          },
+          {
+            "affectedCount": null,
+            "id": "SCOPE_LEAK",
+            "instanceIds": [
+              "plugin:deploy/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "PLUGIN",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 3,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 3,
+          "expectedCount": 1,
+          "violationCount": 2
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x02",
+      "description": "ADR-006 (Claude path): a DISCOVERED instance in a forbidden scope does NOT leak — the effective set is ELIGIBLE only.",
+      "engine": "claude-code",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 3,
+          "requiredSources": 3,
+          "unknownScopes": []
+        },
+        "findings": [],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "case_id": "x03",
+      "description": "Namespace exactness: forbidden name 'deploy' matches the bare logical name 'deploy' but NOT the namespaced 'acme:deploy'.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "DISABLE_MISMATCH",
+            "instanceIds": [
+              "repo:deploy/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "REPO",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 2,
+          "expectedCount": 1,
+          "violationCount": 1
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x04",
+      "description": "Allow-list: a PLUGIN instance outside the REPO-only allow-list leaks; the REPO instance is expected.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "SCOPE_LEAK",
+            "instanceIds": [
+              "plugin:deploy/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "PLUGIN",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 2,
+          "expectedCount": 1,
+          "violationCount": 1
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x05",
+      "description": "Precedence INCOMPLETE > FAIL: an UNKNOWN SOURCE_NOT_ENUMERATED finding makes the audit INCOMPLETE even though a P1 CONFIRMED blast-radius finding also stands.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 4,
+          "requiredSources": 5,
+          "unknownScopes": [
+            "USER"
+          ]
+        },
+        "findings": [
+          {
+            "affectedCount": 2,
+            "id": "NAME_SELECTOR_BLAST_RADIUS",
+            "instanceIds": [],
+            "severity": "P1",
+            "sourceScope": "GLOBAL",
+            "status": "CONFIRMED"
+          },
+          {
+            "affectedCount": null,
+            "id": "SOURCE_NOT_ENUMERATED",
+            "instanceIds": [],
+            "severity": "P1",
+            "sourceScope": "USER",
+            "status": "UNKNOWN"
+          }
+        ],
+        "instanceCount": 1,
+        "policy": {
+          "applied": false,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "INCOMPLETE"
+      }
+    },
+    {
+      "case_id": "x06",
+      "description": "P2-only findings do not fail the audit: same-name collision plus duplicate content stays PASS.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "DUPLICATE_CONTENT",
+            "instanceIds": [],
+            "severity": "P2",
+            "sourceScope": "GLOBAL",
+            "status": "CONFIRMED"
+          },
+          {
+            "affectedCount": null,
+            "id": "SAME_NAME_COLLISION",
+            "instanceIds": [],
+            "severity": "P2",
+            "sourceScope": "GLOBAL",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 2,
+        "policy": {
+          "applied": false,
+          "effectiveCount": 2,
+          "expectedCount": 2,
+          "violationCount": 0
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "case_id": "x07",
+      "description": "A lone P1 CONFIRMED FAIL_OPEN_CONFIG finding fails the audit (configReadable is true here: the config was read but is invalid and fails open).",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "FAIL_OPEN_CONFIG",
+            "instanceIds": [],
+            "severity": "P1",
+            "sourceScope": "GLOBAL",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 1,
+        "policy": {
+          "applied": false,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x08",
+      "description": "A discovery skip (symlink outside the scan root) becomes an UNKNOWN P1 finding and forces INCOMPLETE.",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "SYMLINK_OUTSIDE_ROOT",
+            "instanceIds": [],
+            "severity": "P1",
+            "sourceScope": "REPO",
+            "status": "UNKNOWN"
+          }
+        ],
+        "instanceCount": 1,
+        "policy": {
+          "applied": false,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "INCOMPLETE"
+      }
+    },
+    {
+      "case_id": "x09",
+      "description": "Claude path: an ENTERPRISE instance under a forbidden-scope policy leaks (kernel recomputes policy findings uniformly across hosts).",
+      "engine": "claude-code",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 3,
+          "requiredSources": 3,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "SCOPE_LEAK",
+            "instanceIds": [
+              "enterprise:ent-admin/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "ENTERPRISE",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 1,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 1,
+          "expectedCount": 0,
+          "violationCount": 1
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x10",
+      "description": "OpenMausBot path: a forbidden name that matches no instance produces no finding and keeps the audit PASS.",
+      "engine": "openmausbot",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 2,
+          "requiredSources": 2,
+          "unknownScopes": []
+        },
+        "findings": [],
+        "instanceCount": 1,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "case_id": "x11",
+      "description": "Both lists set: an instance in a forbidden scope outside the allow-list gets exactly ONE SCOPE_LEAK (the allow-list branch is an else-if, never a second finding).",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [
+          {
+            "affectedCount": null,
+            "id": "SCOPE_LEAK",
+            "instanceIds": [
+              "plugin:deploy/SKILL.md"
+            ],
+            "severity": "P1",
+            "sourceScope": "PLUGIN",
+            "status": "CONFIRMED"
+          }
+        ],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 2,
+          "expectedCount": 1,
+          "violationCount": 1
+        },
+        "status": "FAIL"
+      }
+    },
+    {
+      "case_id": "x12",
+      "description": "A DISABLED instance in a forbidden scope does NOT leak — only ELIGIBLE instances are effective (ADR-006).",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 1,
+          "expectedCount": 1,
+          "violationCount": 0
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "case_id": "x13",
+      "description": "Namespace exactness, mirrored: forbidden name 'acme' does NOT match the namespaced logical name 'acme:deploy' (only the first segment matches).",
+      "engine": "codex",
+      "expected": {
+        "coverage": {
+          "enumeratedSources": 5,
+          "requiredSources": 5,
+          "unknownScopes": []
+        },
+        "findings": [],
+        "instanceCount": 2,
+        "policy": {
+          "applied": true,
+          "effectiveCount": 2,
+          "expectedCount": 2,
+          "violationCount": 0
+        },
+        "status": "PASS"
+      }
+    }
+  ],
+  "note": "Hand-derived kernel-level golden cases (T011). Expected values were worked out from PROJECT_BOOK §4.1/§4.2 and the ADR-005/ADR-006 rules by hand — they were NEVER generated by running the production resolver. A failure here means the implementation changed, never this file. Finding detail text is deliberately NOT part of the frozen contract (it is implementation wording); the test compares id, severity, sourceScope, status, instanceIds and affectedCount, and separately asserts every detail is non-empty.",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13"
+}

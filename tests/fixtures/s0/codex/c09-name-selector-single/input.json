@@ -1,0 +1,13 @@
+{
+  "schema": "skillscope.codex-poc-input/v1",
+  "case_id": "c09-name-selector-single",
+  "kind": "control",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "cwd": "layout/repo",
+  "repo_root": "layout/repo",
+  "home_root": "layout/home",
+  "admin_root": "layout/etc-codex",
+  "config_file": "layout/config.toml",
+  "bundled_file": "layout/bundled.json",
+  "plugins_file": "layout/plugins.json"
+}

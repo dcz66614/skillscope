@@ -1,0 +1,379 @@
+
+=== P0-R1-01 Codex PoC (REPO root chmod 000, private-skill inside) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 4,
+  "requiredSources": 5
+ },
+ "unknownScopes": [
+  "REPO"
+ ],
+ "configReadable": true
+}
+
+=== P0-R1-01 Codex kernel audit (policy forbids REPO) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 4,
+  "requiredSources": 5,
+  "unknownScopes": [
+   "REPO"
+  ]
+ },
+ "unknownScopes": [
+  "REPO"
+ ]
+}
+
+=== P0-R1-02 Claude PoC (proj-skill/SKILL.md chmod 000) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 0,
+  "requiredSources": 1,
+  "unknownScopes": [
+   "PROJECT"
+  ]
+ },
+ "unknownScopes": [
+  "PROJECT"
+ ]
+}
+
+=== P0-R1-02 Claude kernel audit (policy forbids PROJECT) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 0,
+  "requiredSources": 1,
+  "unknownScopes": [
+   "PROJECT"
+  ]
+ },
+ "unknownScopes": [
+  "PROJECT"
+ ]
+}
+
+=== P0-R1-02 Claude FULL adapter audit ===
+{
+ "status": "INCOMPLETE",
+ "instances": [],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)",
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 0,
+  "requiredSources": 1,
+  "unknownScopes": [
+   "PROJECT"
+  ]
+ },
+ "unknownScopes": [
+  "PROJECT"
+ ]
+}
+
+=== P0-R1-03 Claude PoC (synced/anthropic-skill exists, no ACCOUNT_SYNC root) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "PROJECT:test-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 3,
+  "unknownScopes": [
+   "ACCOUNT_SYNC"
+  ]
+ },
+ "unknownScopes": [
+  "ACCOUNT_SYNC"
+ ]
+}
+
+=== P0-R1-03 Claude kernel audit ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "PROJECT:test-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "SOURCE_NOT_ENUMERATED(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 3,
+  "unknownScopes": [
+   "ACCOUNT_SYNC"
+  ]
+ },
+ "unknownScopes": [
+  "ACCOUNT_SYNC"
+ ]
+}
+
+=== P0-R1-04 OMB nested features OMB PoC ===
+{
+ "status": "FAIL",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "SCOPE_LEAK(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": [],
+ "flags": {
+  "claudeUserSkills": true,
+  "skillsLibrary": true,
+  "configSource": "file"
+ }
+}
+
+=== P0-R1-04 OMB nested features OMB kernel audit ===
+{
+ "status": "FAIL",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "SCOPE_LEAK(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": []
+}
+
+=== P0-R1-04 OMB nested features OMB FULL adapter audit ===
+{
+ "status": "FAIL",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "SCOPE_LEAK(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": []
+}
+
+=== P0-R1-04-control OMB top-level flags OMB PoC ===
+{
+ "status": "PASS",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": [],
+ "flags": {
+  "claudeUserSkills": false,
+  "skillsLibrary": false,
+  "configSource": "file"
+ }
+}
+
+=== P0-R1-04-control OMB top-level flags OMB kernel audit ===
+{
+ "status": "PASS",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": []
+}
+
+=== P0-R1-04-control OMB top-level flags OMB FULL adapter audit ===
+{
+ "status": "PASS",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": []
+}
+
+=== P1-R1-02a OMB config dir chmod 000 OMB PoC ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [
+  "FAIL_OPEN_CONFIG(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 1,
+  "requiredSources": 2,
+  "unknownScopes": [
+   "CONFIG"
+  ]
+ },
+ "unknownScopes": [
+  "CONFIG"
+ ],
+ "flags": {
+  "claudeUserSkills": false,
+  "skillsLibrary": false,
+  "configSource": "invalid"
+ }
+}
+
+=== P1-R1-02a OMB config dir chmod 000 OMB kernel audit ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [
+  "FAIL_OPEN_CONFIG(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 1,
+  "requiredSources": 2,
+  "unknownScopes": [
+   "CONFIG"
+  ]
+ },
+ "unknownScopes": [
+  "CONFIG"
+ ]
+}
+
+=== P1-R1-02a OMB config dir chmod 000 OMB FULL adapter audit ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:DISCOVERED"
+ ],
+ "findings": [
+  "FAIL_OPEN_CONFIG(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 1,
+  "requiredSources": 2,
+  "unknownScopes": [
+   "CONFIG"
+  ]
+ },
+ "unknownScopes": [
+  "CONFIG"
+ ]
+}
+
+=== P1-R1-02b OMB PoC (opt-out file unreadable, policy allows SHARED_LIBRARY) ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "FAIL_OPEN_CONFIG(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": [
+   "SHARED_LIBRARY"
+  ]
+ },
+ "unknownScopes": [
+  "SHARED_LIBRARY"
+ ],
+ "flags": {
+  "claudeUserSkills": false,
+  "skillsLibrary": true,
+  "configSource": "file"
+ }
+}
+
+=== P1-R1-02b OMB kernel audit ===
+{
+ "status": "INCOMPLETE",
+ "instances": [
+  "SHARED_LIBRARY:shared-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "FAIL_OPEN_CONFIG(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": [
+   "SHARED_LIBRARY"
+  ]
+ },
+ "unknownScopes": [
+  "SHARED_LIBRARY"
+ ]
+}
+
+=== P1-R1-03 Claude FULL adapter (PERSONAL root omitted; personal skill exists on disk) ===
+{
+ "status": "FAIL",
+ "instances": [
+  "PERSONAL:test-skill:ELIGIBLE",
+  "PROJECT:test-skill:ELIGIBLE"
+ ],
+ "findings": [
+  "DUPLICATE_CONTENT(P2)",
+  "SAME_NAME_COLLISION(P2)",
+  "SCOPE_LEAK(P1)"
+ ],
+ "coverage": {
+  "enumeratedSources": 2,
+  "requiredSources": 2,
+  "unknownScopes": []
+ },
+ "unknownScopes": []
+}
+
+DONE

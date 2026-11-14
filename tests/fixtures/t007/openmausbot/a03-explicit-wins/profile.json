@@ -1,0 +1,14 @@
+{
+  "profileId": "a03-explicit-wins",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "dataDir": "./data-explicit",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "emptyLists": ["imported", "plugin"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" }
+    ]
+  }
+}

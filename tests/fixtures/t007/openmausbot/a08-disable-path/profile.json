@@ -1,0 +1,17 @@
+{
+  "profileId": "a08-disable-path",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "disabledPluginIds": ["openai-curated-remote"],
+    "emptyLists": ["imported"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" },
+      { "kind": "plugin", "name": "sites", "path": "./plugin/sites", "pluginId": "openai-curated-remote" },
+      { "kind": "plugin", "name": "notes", "path": "./plugin/notes", "pluginId": "notes-plugin" }
+    ]
+  },
+  "policy": { "forbiddenScopes": ["PLUGIN"] }
+}

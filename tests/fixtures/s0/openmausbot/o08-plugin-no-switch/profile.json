@@ -1,0 +1,27 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "policy": {
+    "forbiddenScopes": [
+      "PLUGIN"
+    ]
+  },
+  "profileId": "o08-plugin-no-switch",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "plugin",
+        "name": "sites",
+        "path": "./plugin/sites",
+        "pluginId": "openai-curated-remote"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

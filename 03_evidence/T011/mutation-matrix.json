@@ -1,0 +1,276 @@
+{
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "generatedBy": "scripts/mutation-test.mjs (T011)",
+  "classes": {
+    "1": "selector-as-path — a name selector matches the wrong field",
+    "2": "scope-precedence — allow/forbid branch logic inverted or duplicated",
+    "3": "fail-open — an INCOMPLETE condition is dropped",
+    "4": "coverage-mask — coverage numbers hide an unenumerated source",
+    "5": "effective-set — a non-ELIGIBLE instance is treated as effective",
+    "6": "namespace-flatten — a namespaced name is matched on one segment only",
+    "7": "severity-downgrade — a P1 finding is demoted to P2",
+    "8": "canonical-order — the canonical key order is weakened"
+  },
+  "summary": {
+    "total": 20,
+    "killed": 20,
+    "survived": 0,
+    "equivalent": 0,
+    "errors": 0,
+    "score": 1,
+    "target": 0.95,
+    "passed": true
+  },
+  "byClass": {
+    "1": {
+      "total": 2,
+      "killed": 2,
+      "survived": 0,
+      "errors": 0
+    },
+    "2": {
+      "total": 3,
+      "killed": 3,
+      "survived": 0,
+      "errors": 0
+    },
+    "3": {
+      "total": 3,
+      "killed": 3,
+      "survived": 0,
+      "errors": 0
+    },
+    "4": {
+      "total": 3,
+      "killed": 3,
+      "survived": 0,
+      "errors": 0
+    },
+    "5": {
+      "total": 2,
+      "killed": 2,
+      "survived": 0,
+      "errors": 0
+    },
+    "6": {
+      "total": 2,
+      "killed": 2,
+      "survived": 0,
+      "errors": 0
+    },
+    "7": {
+      "total": 2,
+      "killed": 2,
+      "survived": 0,
+      "errors": 0
+    },
+    "8": {
+      "total": 3,
+      "killed": 3,
+      "survived": 0,
+      "errors": 0
+    }
+  },
+  "results": [
+    {
+      "id": "M01",
+      "class": 1,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/rules/policy.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 726,
+      "equivalent": false
+    },
+    {
+      "id": "M02",
+      "class": 1,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/rules/policy.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 728,
+      "equivalent": false
+    },
+    {
+      "id": "M03",
+      "class": 2,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/rules/policy.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 837,
+      "equivalent": false
+    },
+    {
+      "id": "M04",
+      "class": 2,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/rules/policy.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 767,
+      "equivalent": false
+    },
+    {
+      "id": "M05",
+      "class": 2,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 833,
+      "equivalent": false
+    },
+    {
+      "id": "M06",
+      "class": 3,
+      "file": "src/findings/index.ts",
+      "killTest": "tests/rules/findings.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 730,
+      "equivalent": false
+    },
+    {
+      "id": "M07",
+      "class": 3,
+      "file": "src/findings/index.ts",
+      "killTest": "tests/rules/findings.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 754,
+      "equivalent": false
+    },
+    {
+      "id": "M08",
+      "class": 3,
+      "file": "src/findings/index.ts",
+      "killTest": "tests/rules/findings.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 731,
+      "equivalent": false
+    },
+    {
+      "id": "M09",
+      "class": 4,
+      "file": "src/resolver/index.ts",
+      "killTest": "tests/golden/s0-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 1170,
+      "equivalent": false
+    },
+    {
+      "id": "M10",
+      "class": 4,
+      "file": "src/resolver/index.ts",
+      "killTest": "tests/golden/s0-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 1155,
+      "equivalent": false
+    },
+    {
+      "id": "M11",
+      "class": 5,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 873,
+      "equivalent": false
+    },
+    {
+      "id": "M12",
+      "class": 5,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 922,
+      "equivalent": false
+    },
+    {
+      "id": "M13",
+      "class": 6,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 827,
+      "equivalent": false
+    },
+    {
+      "id": "M14",
+      "class": 6,
+      "file": "src/policy/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 925,
+      "equivalent": false
+    },
+    {
+      "id": "M15",
+      "class": 7,
+      "file": "src/findings/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 826,
+      "equivalent": false
+    },
+    {
+      "id": "M16",
+      "class": 7,
+      "file": "src/findings/index.ts",
+      "killTest": "tests/golden/extended-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 845,
+      "equivalent": false
+    },
+    {
+      "id": "M17",
+      "class": 8,
+      "file": "src/canonical/index.ts",
+      "killTest": "tests/hash/hash.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 854,
+      "equivalent": false
+    },
+    {
+      "id": "M18",
+      "class": 8,
+      "file": "src/canonical/index.ts",
+      "killTest": "tests/hash/hash.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 973,
+      "equivalent": false
+    },
+    {
+      "id": "M19",
+      "class": 8,
+      "file": "src/canonical/index.ts",
+      "killTest": "tests/hash/hash.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 868,
+      "equivalent": false
+    },
+    {
+      "id": "M20",
+      "class": 4,
+      "file": "src/resolver/index.ts",
+      "killTest": "tests/golden/s0-golden.test.ts",
+      "status": "KILLED",
+      "exitCode": 1,
+      "durationMs": 1170,
+      "equivalent": false
+    }
+  ]
+}

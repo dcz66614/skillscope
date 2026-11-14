@@ -1,0 +1,1 @@
+{"audit_sha256":null,"coverage":{"enumerated_sources":2,"required_sources":3},"expected_count":4,"findings":[{"id":"SOURCE_NOT_ENUMERATED","severity":"P1","source_scope":"PLUGIN","status":"UNKNOWN"}],"inventory_sha256":null,"observed_count":null,"oracle_result_sha256":null,"profile_id":"codex-billing-repo","schema":"skillscope.report/v1","status":"INCOMPLETE"}

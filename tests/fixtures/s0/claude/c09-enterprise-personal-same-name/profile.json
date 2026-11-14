@@ -1,0 +1,18 @@
+{
+  "cwd": ".",
+  "profileId": "c09-enterprise-personal-same-name",
+  "sourceRoots": [
+    {
+      "path": "./enterprise",
+      "required": true,
+      "scope": "ENTERPRISE",
+      "sourceRootId": "enterprise"
+    },
+    {
+      "path": "./personal",
+      "required": true,
+      "scope": "PERSONAL",
+      "sourceRootId": "personal"
+    }
+  ]
+}

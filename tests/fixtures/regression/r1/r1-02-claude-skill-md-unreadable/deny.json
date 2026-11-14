@@ -1,0 +1,5 @@
+{
+  "deny": [
+    "repo/.claude/skills/proj-skill/SKILL.md"
+  ]
+}

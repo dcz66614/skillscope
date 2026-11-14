@@ -1,0 +1,21 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o14-missing-snapshot-skill-dir",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "assigned",
+        "name": "ghost",
+        "path": "./assigned/does-not-exist"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

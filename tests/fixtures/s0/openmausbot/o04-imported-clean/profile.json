@@ -1,0 +1,23 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o04-imported-clean",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "importState": "active",
+        "kind": "imported",
+        "name": "rex",
+        "originalPath": "./original/rex",
+        "path": "./imported/rex"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

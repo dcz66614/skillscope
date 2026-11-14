@@ -1,0 +1,25 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": [
+      "BOT_ASSIGNED"
+    ]
+  },
+  "findings": [
+    "SOURCE_NOT_ENUMERATED"
+  ],
+  "flags": {
+    "claudeUserSkills": false,
+    "configSource": "file",
+    "skillsLibrary": true
+  },
+  "instances": [
+    {
+      "logicalName": "release",
+      "sourceScope": "BOT_ASSIGNED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE"
+}

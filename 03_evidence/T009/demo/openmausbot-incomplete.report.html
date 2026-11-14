@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SkillScope report — omb-demo-incomplete — INCOMPLETE</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a1a}
+h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:2rem}
+.status{padding:.75rem 1rem;border-radius:.5rem;font-weight:700}
+.status-PASS{background:#e6f4ea}.status-FAIL{background:#fce8e6}.status-INCOMPLETE{background:#fef7e0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{background:#f2f2f2}.sub{color:#555;font-size:.85em}.mono{font-family:monospace}
+td.unknown{background:#fef7e0}td.empty{color:#888}
+dl{display:grid;grid-template-columns:12rem 1fr;gap:.25rem 1rem}dt{font-weight:700}dd{margin:0;font-family:monospace;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<h1>SkillScope audit report</h1>
+<p>Profile <strong>omb-demo-incomplete</strong> · Engine <strong>openmausbot</strong> · Bot <strong>omb-demo-incomplete</strong></p>
+<div class="status status-INCOMPLETE">RESULT: INCOMPLETE — a required source could not be enumerated; completeness cannot be proven</div>
+<h2>Scope matrix</h2>
+<p>Bot × source scope: instance counts per source scope, as reported by the resolver. Unknown scopes were not enumerated and are never shown as empty.</p>
+<table>
+<thead><tr><th>Bot / Session Profile</th></tr></thead>
+<tbody><tr><td>openmausbot / omb-demo-incomplete</td></tr></tbody>
+</table>
+<h2>Coverage</h2>
+<p>Enumerated sources: <strong>1</strong> of <strong>2</strong> required. Unknown scopes: <strong>SNAPSHOT</strong>. Policy applied: <strong>yes</strong> (effective 0, expected 0, violations 0).</p>
+<h2>Findings (1)</h2>
+<table>
+<thead><tr><th>Finding</th><th>Severity</th><th>Scope</th><th>Status</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>SOURCE_NOT_ENUMERATED</td><td>P1</td><td>SYSTEM</td><td>UNKNOWN</td><td>no versioned snapshot was provided (neither inline snapshot nor snapshotPath); per-bot inventory cannot be enumerated</td></tr>
+</tbody>
+</table>
+<h2>Skill instances (0)</h2>
+<table>
+<thead><tr><th>Instance</th><th>Logical name</th><th>Scope</th><th>Relative path</th><th>Status</th><th>Content SHA-256</th></tr></thead>
+<tbody>
+<tr><td colspan="6">No instances enumerated.</td></tr>
+</tbody>
+</table>
+<h2>Hashes</h2>
+<dl>
+<dt>audit_sha256</dt><dd>0b15b4a5e940965232f346b012915a614f8786539e88a346aefad63cc8ec581b</dd>
+<dt>inventory_sha256</dt><dd>4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945</dd>
+<dt>oracle_result_sha256</dt><dd>null (not run — the CLI never executes the Python Oracle)</dd>
+<dt>expected_count</dt><dd>0</dd>
+<dt>observed_count</dt><dd>null (incomplete enumeration)</dd>
+</dl>
+<script type="application/json" id="skillscope-report">{"audit_sha256":"0b15b4a5e940965232f346b012915a614f8786539e88a346aefad63cc8ec581b","coverage":{"enumerated_sources":1,"required_sources":2},"expected_count":0,"findings":[{"id":"SOURCE_NOT_ENUMERATED","severity":"P1","source_scope":"SYSTEM","status":"UNKNOWN"}],"inventory_sha256":"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945","observed_count":null,"oracle_result_sha256":null,"profile_id":"omb-demo-incomplete","schema":"skillscope.report/v1","status":"INCOMPLETE"}</script>
+</body>
+</html>

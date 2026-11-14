@@ -1,0 +1,6 @@
+{
+  "profileId": "a14-snapshot-file",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshotPath": "./snapshot.json"
+}

@@ -1,0 +1,9 @@
+S0 gate PASS — seed P023-SKILLSCOPE-S0-2026-11-13 — base 5175eb873fc9367829067f739c74aeef8128edd4
+fixtures: 48 (control 24, planted 24)
+production/oracle parity: 48/48
+golden match: production 48/48, oracle 48/48
+detected defects: 24/24; control false alarms: 0
+incomplete sources: 11 across 10 fixtures
+external requests: 0; source writes: 0
+replay: 100 runs, 1 unique gate hash
+gate_sha256: a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca

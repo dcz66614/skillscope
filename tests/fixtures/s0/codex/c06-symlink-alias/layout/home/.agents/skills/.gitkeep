@@ -1,0 +1,8 @@
+# Placeholder: git cannot track empty directories, but this skills
+# directory must exist (even when empty) for the audit to report the
+# source as enumerated with 0 instances. A missing directory is
+# fail-closed SOURCE_NOT_ENUMERATED (INCOMPLETE), not empty.
+# Added by P023 T012: the release rehearsal found `git archive`
+# drops empty dirs, so the packaged tree audited differently from
+# the working tree. This file is ignored by the Codex PoC and the
+# Python Oracle (only directories containing SKILL.md count).

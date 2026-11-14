@@ -1,0 +1,26 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [],
+  "flags": {
+    "claudeUserSkills": false,
+    "configSource": "file",
+    "skillsLibrary": false
+  },
+  "instances": [
+    {
+      "logicalName": "openai-curated-remote:sites",
+      "sourceScope": "PLUGIN",
+      "status": "DISABLED"
+    },
+    {
+      "logicalName": "release",
+      "sourceScope": "BOT_ASSIGNED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

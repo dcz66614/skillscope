@@ -1,0 +1,20 @@
+{
+  "coverage": {
+    "enumeratedSources": 1,
+    "requiredSources": 2,
+    "unknownScopes": [
+      "ADD_DIR"
+    ]
+  },
+  "findings": [
+    "SOURCE_NOT_ENUMERATED"
+  ],
+  "instances": [
+    {
+      "logicalName": "release",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE"
+}

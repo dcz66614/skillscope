@@ -1,0 +1,29 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o07-native-name-blast",
+  "snapshot": {
+    "loadableRoots": [],
+    "nativeDisabledNames": [
+      "deploy"
+    ],
+    "skills": [
+      {
+        "kind": "native",
+        "name": "deploy",
+        "path": "./native/deploy"
+      },
+      {
+        "kind": "repo",
+        "name": "deploy",
+        "path": "./repo/deploy"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

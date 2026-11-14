@@ -1,0 +1,374 @@
+{
+  "schema": "skillscope.t002-report/v1",
+  "task_id": "T002",
+  "base_commit": "b0d3d4f",
+  "status": "PASS",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "acceptance_commands": [
+    {
+      "command": "npm run test:codex -- --run",
+      "exit_code": 0,
+      "result": "11/11 tests passed (8 golden fixtures + 3 unit tests)"
+    },
+    {
+      "command": "npm run test:oracle",
+      "exit_code": 0,
+      "result": "11 tests OK"
+    }
+  ],
+  "extra_checks": [
+    {
+      "command": "npm test",
+      "exit_code": 0,
+      "result": "47/47 passed (contracts 10 + codex 11 + claude 13 + openmausbot 13)"
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "result": "tsc --noEmit clean"
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "result": "dist/adapters/codex/codex-poc.js produced"
+    },
+    {
+      "command": "npm ci",
+      "exit_code": 0,
+      "result": "lockfile consistent"
+    }
+  ],
+  "toml_parser": {
+    "package": "smol-toml",
+    "version": "1.9.1",
+    "license": "BSD-3-Clause",
+    "dependencies": 0,
+    "integrity": "sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ=="
+  },
+  "cases": [
+    {
+      "case_id": "c01-repo-discovery",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 3,
+      "skills": [
+        {
+          "logical_name": "release",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/release/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": "a/.agents/skills/deploy/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "notify",
+          "source_scope": "REPO",
+          "relative_path": "a/b/.agents/skills/notify/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c02-user-admin-system",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 4,
+      "skills": [
+        {
+          "logical_name": "personal",
+          "source_scope": "USER",
+          "relative_path": ".agents/skills/personal/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "org-wide",
+          "source_scope": "ADMIN",
+          "relative_path": "skills/org-wide/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "docx",
+          "source_scope": "SYSTEM",
+          "relative_path": "bundled/docx/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "pdf",
+          "source_scope": "SYSTEM",
+          "relative_path": "bundled/pdf/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c03-path-selector",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/deploy/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": "a/.agents/skills/deploy/SKILL.md",
+          "status": "DISABLED",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c04-name-selector-blast",
+      "kind": "planted",
+      "status": "FAIL",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/deploy/SKILL.md",
+          "status": "DISABLED",
+          "aliases": []
+        },
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": "a/.agents/skills/deploy/SKILL.md",
+          "status": "DISABLED",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "NAME_SELECTOR_BLAST_RADIUS",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "affectedCount": 2,
+          "detail": "name selector \"deploy\" affects 2 distinct instances"
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c05-last-match-wins",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/deploy/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "deploy",
+          "source_scope": "REPO",
+          "relative_path": "a/.agents/skills/deploy/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c06-symlink-alias",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "alpha",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/alpha/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": [
+            ".agents/skills/alpha-alias/SKILL.md"
+          ]
+        },
+        {
+          "logical_name": "beta",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/beta/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c07-bundled-disabled",
+      "kind": "control",
+      "status": "PASS",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "release",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/release/SKILL.md",
+          "status": "ELIGIBLE",
+          "aliases": []
+        },
+        {
+          "logical_name": "pdf",
+          "source_scope": "SYSTEM",
+          "relative_path": "bundled/pdf/SKILL.md",
+          "status": "DISABLED",
+          "aliases": []
+        }
+      ],
+      "findings": [],
+      "coverage": {
+        "enumeratedSources": 5,
+        "requiredSources": 5
+      },
+      "unknown_sources": [],
+      "config_readable": true
+    },
+    {
+      "case_id": "c08-unreadable-config",
+      "kind": "planted",
+      "status": "INCOMPLETE",
+      "skill_count": 2,
+      "skills": [
+        {
+          "logical_name": "release",
+          "source_scope": "REPO",
+          "relative_path": ".agents/skills/release/SKILL.md",
+          "status": "UNKNOWN",
+          "aliases": []
+        },
+        {
+          "logical_name": "personal",
+          "source_scope": "USER",
+          "relative_path": ".agents/skills/personal/SKILL.md",
+          "status": "UNKNOWN",
+          "aliases": []
+        }
+      ],
+      "findings": [
+        {
+          "id": "FAIL_OPEN_CONFIG",
+          "severity": "P1",
+          "sourceScope": "GLOBAL",
+          "status": "CONFIRMED",
+          "detail": "skills.config could not be read or parsed; effective set is unknown (fail closed)"
+        },
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "PLUGIN",
+          "status": "UNKNOWN",
+          "detail": "PLUGIN source could not be enumerated; absence is not evidence of absence"
+        },
+        {
+          "id": "SOURCE_NOT_ENUMERATED",
+          "severity": "P1",
+          "sourceScope": "SYSTEM",
+          "status": "UNKNOWN",
+          "detail": "SYSTEM source could not be enumerated; absence is not evidence of absence"
+        }
+      ],
+      "coverage": {
+        "enumeratedSources": 3,
+        "requiredSources": 5
+      },
+      "unknown_sources": [
+        "SYSTEM",
+        "PLUGIN"
+      ],
+      "config_readable": false
+    }
+  ],
+  "deliverable_files": [
+    {
+      "path": "src/adapters/codex/codex-poc.ts",
+      "bytes": 21902,
+      "sha256": "bcd3197c4e4a978f5b7691b5d8bf51f9dcdebe5adb2722eb99fa88c55d5679fc"
+    },
+    {
+      "path": "src/adapters/codex/README.md",
+      "bytes": 5655,
+      "sha256": "83e06802dff8b4b1cbddbb4ed9f45858cdb38e12b54cc84d434e86db7dbaa501"
+    },
+    {
+      "path": "tests/codex/codex-poc.test.ts",
+      "bytes": 8885,
+      "sha256": "c01388f1c2a47b9b52da21aeaee60b5e9fada105f3bac212e870661aa0a86bca"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1116,
+      "sha256": "76fea7d6d9605734578a911324cfbad48062a330822e1e55cc3b256a52133a48"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 40992,
+      "sha256": "8952c4515f3d631fb018e1781712ae1af835cfbbb2a5b6e6dfcfa42e8230c64a"
+    }
+  ],
+  "golden_review": "field-by-field manual review of all 8 expected.json files; independent sha256 spot-checks of 3 SKILL.md files + 1 bundled content + 2 canonical paths all matched; no absolute paths in any expected.json",
+  "known_limitations": [
+    "path selector matching zero instances is silently ignored (no finding yet; T006 may add one)",
+    "name-selector ordering covered by unit test, not a golden fixture",
+    "symlink loops / escaping targets raise loudly; bounded handling belongs to T005",
+    "plugin skills enumerated as ELIGIBLE with no disable path (T007)"
+  ],
+  "next_task": "T004 (Python Reference Oracle + S0 Gate)"
+}

@@ -1,0 +1,19 @@
+{
+  "coverage": {
+    "enumeratedSources": 1,
+    "requiredSources": 2,
+    "unknownScopes": [
+      "SNAPSHOT"
+    ]
+  },
+  "findings": [
+    "SOURCE_NOT_ENUMERATED"
+  ],
+  "flags": {
+    "claudeUserSkills": false,
+    "configSource": "file",
+    "skillsLibrary": true
+  },
+  "instances": [],
+  "status": "INCOMPLETE"
+}

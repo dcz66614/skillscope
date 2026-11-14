@@ -1,0 +1,49 @@
+{
+  "schema": "skillscope.release-manifest/v1",
+  "project": "P023 SkillScope",
+  "spec_version": "1.0.0",
+  "license": "MIT",
+  "frozen_commit": "f6b35a8a5fc7f0e801e223fafe737fa6996eaaff",
+  "frozen_commit_date": "2026-11-13T21:27:12+00:00",
+  "s0_gate": {
+    "status": "PASS",
+    "gate_sha256": "a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca",
+    "seed": "P023-SKILLSCOPE-S0-2026-11-13"
+  },
+  "review": {
+    "task": "T013",
+    "p0": 0,
+    "p1": 0,
+    "p2": 10
+  },
+  "generated_by": "npm run release:build (scripts/release-build.mjs)",
+  "generation": {
+    "source_zip": "git archive --format=zip --prefix=skillscope/ f6b35a8a5fc7f0e801e223fafe737fa6996eaaff",
+    "dist_zip": "npm run build (fresh, immediately before packaging) + deterministic STORE zip (scripts/release-zip.mjs: fixed 1980-01-01 timestamps, entries sorted by path); entries are package.json, package-lock.json, README.md and LICENSE at the root, dist/<path>, schemas/<path>, docs/<path> and src/adapters/openmausbot/openmausbot-snapshot-v1.json (the CLI reads schemas relative to the repo root at runtime; tsc does not copy .json into dist/); LICENSE content hash is pinned to 50b8b302… (FIX-R3, P1-R3-01) and the README links under docs/ ship with it (P2-R3-01)",
+    "note": "Re-running release:build re-freezes the manifest-pinned frozen commit and regenerates byte-identical artifacts; delete release/ for a fresh freeze of HEAD. The clean-room rebuild links the repo node_modules instead of `npm ci` (no network)."
+  },
+  "source_zip": {
+    "file": "source.zip",
+    "bytes": 2886320,
+    "sha256": "850c5713778c188c350faf86e4ef2a5e58eb77eb1c426e6f5abebde1e57553c4",
+    "file_count": 848
+  },
+  "dist_zip": {
+    "file": "dist.zip",
+    "bytes": 513226,
+    "sha256": "f405795b4428d133ae6a211991938068fcf9256d3dfc47a067a4c828fbbd05a7"
+  },
+  "clean_room_audit_sha256": "948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce",
+  "repo_audit_sha256": "948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce",
+  "dist_zip_audit_sha256": "948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce",
+  "environment": {
+    "node": "v24.22.1",
+    "npm": "10.9.4",
+    "python": "Python 3.12.3",
+    "git": "git version 2.43.0",
+    "platform": "linux x64",
+    "cpu_model": "AMD EPYC 9D25 126-Core Processor",
+    "cpu_count": 4,
+    "total_memory_bytes": 8319901696
+  }
+}

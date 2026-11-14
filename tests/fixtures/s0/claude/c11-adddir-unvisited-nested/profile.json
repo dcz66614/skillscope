@@ -1,0 +1,19 @@
+{
+  "cwd": ".",
+  "profileId": "c11-adddir-unvisited-nested",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./nested",
+      "required": true,
+      "scope": "NESTED",
+      "sourceRootId": "nested",
+      "visited": false
+    }
+  ]
+}

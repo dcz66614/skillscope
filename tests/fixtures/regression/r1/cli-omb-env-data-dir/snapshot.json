@@ -1,0 +1,1 @@
+{"version":"openmausbot-snapshot/v1","skills":[{"name":"shared-skill","kind":"library","path":"./library/shared-skill"}],"loadableRoots":["./library"],"emptyLists":["assigned","imported","plugin"]}

@@ -1,0 +1,5 @@
+{
+  "deny": [
+    "repo/.agents/skills"
+  ]
+}

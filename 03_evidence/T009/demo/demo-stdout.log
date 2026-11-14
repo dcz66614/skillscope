@@ -1,0 +1,49 @@
+### codex-fail (json, exit 1)
+CODEX / profile: codex-demo-fail
+  ✗ repo/.agents/skills/deploy/SKILL.md
+  ✓ repo/.agents/skills/release/SKILL.md
+  ✗ user/.agents/skills/deploy/SKILL.md
+  ! NAME_SELECTOR_BLAST_RADIUS [P1] (GLOBAL): name selector "deploy" affects 2 distinct instances
+  coverage: 5/5 sources enumerated
+RESULT: FAIL
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/codex-fail.report.json
+
+### codex-fail (html, exit 1)
+CODEX / profile: codex-demo-fail
+  ✗ repo/.agents/skills/deploy/SKILL.md
+  ✓ repo/.agents/skills/release/SKILL.md
+  ✗ user/.agents/skills/deploy/SKILL.md
+  ! NAME_SELECTOR_BLAST_RADIUS [P1] (GLOBAL): name selector "deploy" affects 2 distinct instances
+  coverage: 5/5 sources enumerated
+RESULT: FAIL
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/codex-fail.report.html
+
+### claude-pass (json, exit 0)
+CLAUDE-CODE / profile: claude-demo-pass
+  ✓ personal/personal-skill/SKILL.md
+  ✓ project/project-skill/SKILL.md
+  coverage: 2/2 sources enumerated
+RESULT: PASS
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/claude-pass.report.json
+
+### claude-pass (html, exit 0)
+CLAUDE-CODE / profile: claude-demo-pass
+  ✓ personal/personal-skill/SKILL.md
+  ✓ project/project-skill/SKILL.md
+  coverage: 2/2 sources enumerated
+RESULT: PASS
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/claude-pass.report.html
+
+### openmausbot-incomplete (json, exit 2)
+OPENMAUSBOT / profile: omb-demo-incomplete
+  ! SOURCE_NOT_ENUMERATED [P1] (SYSTEM): no versioned snapshot was provided (neither inline snapshot nor snapshotPath); per-bot inventory cannot be enumerated
+  coverage: 1/2 sources enumerated; unknown: SNAPSHOT
+RESULT: INCOMPLETE
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/openmausbot-incomplete.report.json
+
+### openmausbot-incomplete (html, exit 2)
+OPENMAUSBOT / profile: omb-demo-incomplete
+  ! SOURCE_NOT_ENUMERATED [P1] (SYSTEM): no versioned snapshot was provided (neither inline snapshot nor snapshotPath); per-bot inventory cannot be enumerated
+  coverage: 1/2 sources enumerated; unknown: SNAPSHOT
+RESULT: INCOMPLETE
+Report: /home/hatch/workspace/p023-skillscope/03_evidence/T009/demo/openmausbot-incomplete.report.html

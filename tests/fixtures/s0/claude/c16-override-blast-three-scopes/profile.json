@@ -1,0 +1,27 @@
+{
+  "cwd": ".",
+  "profileId": "c16-override-blast-three-scopes",
+  "skillOverrides": {
+    "deploy": "off"
+  },
+  "sourceRoots": [
+    {
+      "path": "./enterprise",
+      "required": true,
+      "scope": "ENTERPRISE",
+      "sourceRootId": "enterprise"
+    },
+    {
+      "path": "./personal",
+      "required": true,
+      "scope": "PERSONAL",
+      "sourceRootId": "personal"
+    },
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "acme": false
+  }
+}

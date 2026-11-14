@@ -1,0 +1,23 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "SAME_NAME_COLLISION"
+  ],
+  "instances": [
+    {
+      "logicalName": "deploy",
+      "sourceScope": "ENTERPRISE",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "deploy",
+      "sourceScope": "PERSONAL",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

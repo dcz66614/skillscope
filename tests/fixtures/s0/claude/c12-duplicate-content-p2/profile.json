@@ -1,0 +1,18 @@
+{
+  "cwd": ".",
+  "profileId": "c12-duplicate-content-p2",
+  "sourceRoots": [
+    {
+      "path": "./project",
+      "required": true,
+      "scope": "PROJECT",
+      "sourceRootId": "project"
+    },
+    {
+      "path": "./personal",
+      "required": true,
+      "scope": "PERSONAL",
+      "sourceRootId": "personal"
+    }
+  ]
+}

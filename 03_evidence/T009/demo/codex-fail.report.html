@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SkillScope report — codex-demo-fail — FAIL</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:2rem auto;max-width:1100px;padding:0 1rem;color:#1a1a1a}
+h1{font-size:1.4rem}h2{font-size:1.1rem;margin-top:2rem}
+.status{padding:.75rem 1rem;border-radius:.5rem;font-weight:700}
+.status-PASS{background:#e6f4ea}.status-FAIL{background:#fce8e6}.status-INCOMPLETE{background:#fef7e0}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:.4rem .6rem;text-align:left;vertical-align:top}
+th{background:#f2f2f2}.sub{color:#555;font-size:.85em}.mono{font-family:monospace}
+td.unknown{background:#fef7e0}td.empty{color:#888}
+dl{display:grid;grid-template-columns:12rem 1fr;gap:.25rem 1rem}dt{font-weight:700}dd{margin:0;font-family:monospace;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<h1>SkillScope audit report</h1>
+<p>Profile <strong>codex-demo-fail</strong> · Engine <strong>codex</strong></p>
+<div class="status status-FAIL">RESULT: FAIL — at least one confirmed scope deviation or policy violation</div>
+<h2>Scope matrix</h2>
+<p>Bot × source scope: instance counts per source scope, as reported by the resolver. Unknown scopes were not enumerated and are never shown as empty.</p>
+<table>
+<thead><tr><th>Bot / Session Profile</th><th>REPO</th><th>USER</th></tr></thead>
+<tbody><tr><td>codex / codex-demo-fail</td><td><strong>2</strong><br><span class="sub">1 DISABLED, 1 ELIGIBLE</span></td><td><strong>1</strong><br><span class="sub">1 DISABLED</span></td></tr></tbody>
+</table>
+<h2>Coverage</h2>
+<p>Enumerated sources: <strong>5</strong> of <strong>5</strong> required. Unknown scopes: <strong>none</strong>. Policy applied: <strong>yes</strong> (effective 1, expected 1, violations 0).</p>
+<h2>Findings (1)</h2>
+<table>
+<thead><tr><th>Finding</th><th>Severity</th><th>Scope</th><th>Status</th><th>Detail</th></tr></thead>
+<tbody>
+<tr><td>NAME_SELECTOR_BLAST_RADIUS</td><td>P1</td><td>GLOBAL</td><td>CONFIRMED</td><td>name selector &quot;deploy&quot; affects 2 distinct instances<br><span class="sub">affected instances: 2</span></td></tr>
+</tbody>
+</table>
+<h2>Skill instances (3)</h2>
+<table>
+<thead><tr><th>Instance</th><th>Logical name</th><th>Scope</th><th>Relative path</th><th>Status</th><th>Content SHA-256</th></tr></thead>
+<tbody>
+<tr><td>repo:.agents/skills/deploy/SKILL.md</td><td>deploy</td><td>REPO</td><td>.agents/skills/deploy/SKILL.md</td><td>DISABLED</td><td class="mono">0a327cff67aa…</td></tr>
+<tr><td>repo:.agents/skills/release/SKILL.md</td><td>release</td><td>REPO</td><td>.agents/skills/release/SKILL.md</td><td>ELIGIBLE</td><td class="mono">7044d28211fe…</td></tr>
+<tr><td>user:.agents/skills/deploy/SKILL.md</td><td>deploy</td><td>USER</td><td>.agents/skills/deploy/SKILL.md</td><td>DISABLED</td><td class="mono">4b2371bef113…</td></tr>
+</tbody>
+</table>
+<h2>Hashes</h2>
+<dl>
+<dt>audit_sha256</dt><dd>948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce</dd>
+<dt>inventory_sha256</dt><dd>d1b19d48a1b87fa7fb684f809635249e3036fd63b6232383ed38d561c919dd8e</dd>
+<dt>oracle_result_sha256</dt><dd>null (not run — the CLI never executes the Python Oracle)</dd>
+<dt>expected_count</dt><dd>1</dd>
+<dt>observed_count</dt><dd>3</dd>
+</dl>
+<script type="application/json" id="skillscope-report">{"audit_sha256":"948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce","coverage":{"enumerated_sources":5,"required_sources":5},"expected_count":1,"findings":[{"id":"NAME_SELECTOR_BLAST_RADIUS","severity":"P1","source_scope":"GLOBAL","status":"CONFIRMED"}],"inventory_sha256":"d1b19d48a1b87fa7fb684f809635249e3036fd63b6232383ed38d561c919dd8e","observed_count":3,"oracle_result_sha256":null,"profile_id":"codex-demo-fail","schema":"skillscope.report/v1","status":"FAIL"}</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "IMPORT_ORIGINAL_PATH_STILL_ACTIVE",
+    "SAME_NAME_COLLISION"
+  ],
+  "flags": {
+    "claudeUserSkills": false,
+    "configSource": "file",
+    "skillsLibrary": false
+  },
+  "instances": [
+    {
+      "logicalName": "rex",
+      "sourceScope": "IMPORTED",
+      "status": "DISABLED"
+    },
+    {
+      "logicalName": "rex",
+      "sourceScope": "IMPORTED",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "release",
+      "sourceScope": "BOT_ASSIGNED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "FAIL"
+}

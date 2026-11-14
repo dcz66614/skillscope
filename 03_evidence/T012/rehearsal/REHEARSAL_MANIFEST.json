@@ -1,0 +1,19 @@
+{
+  "schema": "skillscope.release-rehearsal/v1",
+  "generated_utc": "2026-11-13T15:47:03.670Z",
+  "head_commit": "495890da26b2a283e5f7b0e474035afce5150e16",
+  "source_zip": {
+    "file": "source.zip",
+    "bytes": 1342913,
+    "sha256": "bce9c763d866d9917e2198845ed0b9bad6c9769420fe67c39300e78e76739b93"
+  },
+  "dist_zip": {
+    "file": "dist.zip",
+    "bytes": 87127,
+    "sha256": "4ed1c1454d52248eecc3bc9cc500aa768a3b9493c48b08b0b9f8b3cf7bdf40db"
+  },
+  "clean_room_audit_sha256": "948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce",
+  "repo_audit_sha256": "948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce",
+  "verdict": "PASS",
+  "failures": []
+}

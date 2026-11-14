@@ -1,0 +1,129 @@
+{
+  "task": "T011",
+  "project": "P023 SkillScope",
+  "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+  "generatedAtUtc": "2026-11-13T15:26:08.048Z",
+  "generatedBy": "scripts/t011-evidence.mjs (T011)",
+  "baseCommit": "3db85850f19cfe34adbcbac129ea95d880657ea0",
+  "expectedGateSha256": "a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca",
+  "acceptance": {
+    "fullSuite": {
+      "testFilesPassed": 25,
+      "testsPassed": 512,
+      "testsFailed": 0,
+      "exitCode": 0,
+      "durationMs": 24120
+    },
+    "property": {
+      "seed": "P023-SKILLSCOPE-S0-2026-11-13",
+      "testFilesPassed": 1,
+      "testsPassed": 10,
+      "testsFailed": 0,
+      "exitCode": 0,
+      "durationMs": 1287
+    },
+    "mutation": {
+      "exitCode": 0,
+      "durationMs": 23426,
+      "summary": {
+        "total": 20,
+        "killed": 20,
+        "survived": 0,
+        "equivalent": 0,
+        "errors": 0,
+        "score": 1,
+        "target": 0.95,
+        "passed": true
+      },
+      "byClass": {
+        "1": {
+          "total": 2,
+          "killed": 2,
+          "survived": 0,
+          "errors": 0
+        },
+        "2": {
+          "total": 3,
+          "killed": 3,
+          "survived": 0,
+          "errors": 0
+        },
+        "3": {
+          "total": 3,
+          "killed": 3,
+          "survived": 0,
+          "errors": 0
+        },
+        "4": {
+          "total": 3,
+          "killed": 3,
+          "survived": 0,
+          "errors": 0
+        },
+        "5": {
+          "total": 2,
+          "killed": 2,
+          "survived": 0,
+          "errors": 0
+        },
+        "6": {
+          "total": 2,
+          "killed": 2,
+          "survived": 0,
+          "errors": 0
+        },
+        "7": {
+          "total": 2,
+          "killed": 2,
+          "survived": 0,
+          "errors": 0
+        },
+        "8": {
+          "total": 3,
+          "killed": 3,
+          "survived": 0,
+          "errors": 0
+        }
+      }
+    },
+    "oracle": {
+      "exitCode": 0,
+      "durationMs": 340,
+      "testsRun": 42,
+      "ok": true
+    },
+    "gate": {
+      "exitCode": 0,
+      "durationMs": 6620,
+      "gateSha256": "a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca",
+      "gateHashUnchanged": true,
+      "parity": {
+        "matched": 48,
+        "total": 48
+      },
+      "goldenMatch": {
+        "production": 48,
+        "productionTotal": 48,
+        "oracle": 48,
+        "oracleTotal": 48
+      },
+      "detectedDefects": {
+        "detected": 24,
+        "total": 24
+      },
+      "controlFalseAlarms": 0,
+      "replay": {
+        "runs": 100,
+        "uniqueHashes": 1
+      },
+      "s0EvidenceRestored": true
+    }
+  },
+  "passed": true,
+  "notes": [
+    "All numbers above are parsed from real command output by this script; nothing was hand-typed.",
+    "The full suite count includes the new T011 suites: tests/golden (S0 full-field, Oracle parity, extended), tests/property, tests/mutation definitions, and the T011 regression tests in tests/hash.",
+    "One real defect was found and fixed by this task (see T011_REPORT.md): canonicalizeJson sorted object keys before NFC normalisation, so the canonical form was not a fixed point for decomposed keys. The fix is in src/canonical/index.ts; the frozen hash vectors still pass.",
+    "Mutation score counts killed / (total - equivalent); there are no equivalent mutants in this run."
+  ]
+}

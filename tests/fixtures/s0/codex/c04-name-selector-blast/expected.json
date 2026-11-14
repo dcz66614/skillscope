@@ -1,0 +1,53 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c04-name-selector-blast",
+  "status": "FAIL",
+  "skills": [
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "folderName": "deploy",
+      "manifestName": "deploy",
+      "contentSha256": "483864c383e445c3eb319c4b1f090eb70752f97cd6fb039db0f637b362f2835e",
+      "canonicalPathHash": "ad444cf0fb1d5e588213c414bdc3f0410d365b256af5fdbeab8552cede7c7113",
+      "status": "DISABLED",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:repo:repo/a/.agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": "a/.agents/skills/deploy/SKILL.md",
+      "canonicalPath": "repo/a/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "folderName": "deploy",
+      "manifestName": "deploy",
+      "contentSha256": "18e2d6f6c0da28db42a2d755c82d29a028e6e27685fcf676c526382d8103b66c",
+      "canonicalPathHash": "f1b3adb595e298e7dde1365af15eb2484761ad9b5a4edddd8296212016ff31e1",
+      "status": "DISABLED",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [
+    {
+      "id": "NAME_SELECTOR_BLAST_RADIUS",
+      "severity": "P1",
+      "sourceScope": "GLOBAL",
+      "status": "CONFIRMED",
+      "affectedCount": 2,
+      "detail": "name selector \"deploy\" affects 2 distinct instances"
+    }
+  ],
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "unknownSources": [],
+  "configReadable": true
+}

@@ -1,0 +1,23 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "SCOPE_LEAK"
+  ],
+  "instances": [
+    {
+      "logicalName": "release",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "internal-tool",
+      "sourceScope": "NESTED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "FAIL"
+}

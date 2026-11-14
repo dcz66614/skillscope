@@ -1,0 +1,24 @@
+{
+  "cwd": ".",
+  "profileId": "c04-adddir-and-sync",
+  "sourceRoots": [
+    {
+      "path": "./adddir",
+      "required": true,
+      "scope": "ADD_DIR",
+      "sourceRootId": "adddir"
+    },
+    {
+      "path": "",
+      "required": true,
+      "scope": "ACCOUNT_SYNC",
+      "snapshotSkills": [
+        {
+          "description": "Synced docs skill.",
+          "name": "synced-docs"
+        }
+      ],
+      "sourceRootId": "sync"
+    }
+  ]
+}

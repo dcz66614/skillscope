@@ -1,0 +1,46 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c06-symlink-alias",
+  "status": "PASS",
+  "skills": [
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/alpha/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/alpha/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/alpha/SKILL.md",
+      "logicalName": "alpha",
+      "folderName": "alpha",
+      "manifestName": "alpha",
+      "contentSha256": "d7a481114aad0a78a743f6f7d7c12613ad255d9ea1aa0f775a317f75732d3ca1",
+      "canonicalPathHash": "5d2792da8a1412c417e6d9fe49cae4eb439236bdb76fefbe93505ec90e81921c",
+      "status": "ELIGIBLE",
+      "aliases": [
+        ".agents/skills/alpha-alias/SKILL.md"
+      ],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:repo:repo/.agents/skills/beta/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "relativePath": ".agents/skills/beta/SKILL.md",
+      "canonicalPath": "repo/.agents/skills/beta/SKILL.md",
+      "logicalName": "beta",
+      "folderName": "beta",
+      "manifestName": "beta",
+      "contentSha256": "6125658be8175ec3e2c19ca318d2c999c9f67885dd3cada52f7d2528830d72fe",
+      "canonicalPathHash": "380ec5e8aafa021353cdef68592758fb93f069a23a86014a836185b4d7b2355d",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [],
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "unknownSources": [],
+  "configReadable": true
+}

@@ -1,0 +1,24 @@
+{
+  "coverage": {
+    "enumeratedSources": 2,
+    "requiredSources": 2,
+    "unknownScopes": []
+  },
+  "findings": [
+    "DUPLICATE_CONTENT",
+    "SAME_NAME_COLLISION"
+  ],
+  "instances": [
+    {
+      "logicalName": "release",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "release",
+      "sourceScope": "PERSONAL",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

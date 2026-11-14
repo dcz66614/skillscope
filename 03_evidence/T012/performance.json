@@ -1,0 +1,44 @@
+{
+  "schema": "skillscope.performance/v1",
+  "generated_utc": "2026-11-13T21:39:00.270Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux x64",
+    "os_release": "7.0.0-44-generic",
+    "cpu_model": "AMD EPYC 9D25 126-Core Processor",
+    "cpu_count": 4,
+    "total_memory_bytes": 8319901696,
+    "load_average_1m": 1.66,
+    "uptime_seconds": 23244
+  },
+  "fixture": {
+    "instance_count": 500,
+    "runs": 3
+  },
+  "targets": {
+    "scan_ms": 5000,
+    "html_ms": 2000,
+    "peak_rss_bytes": 314572800
+  },
+  "measurements": {
+    "scan_ms": [
+      295,
+      246,
+      203
+    ],
+    "scan_ms_median": 246,
+    "html_ms": [
+      263,
+      307,
+      260
+    ],
+    "html_ms_median": 263,
+    "peak_rss_bytes": 86245376,
+    "peak_rss_mib": 82.3,
+    "audit_sha256": "6979a58cc86a980934d28aa3eb9021c2924d2ed80df6decf449a37b983b4417a",
+    "observed_count": 500,
+    "hash_stable": true
+  },
+  "verdict": "PASS",
+  "failures": []
+}

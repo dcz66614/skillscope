@@ -1,0 +1,12 @@
+{
+  "enabledPlugins": {
+    "acme@team-market": false,
+    "notes@team-market": true
+  },
+  "extraKnownMarketplaces": [
+    {
+      "name": "team-market",
+      "path": "./marketplace"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "caseId": "c09-name-selector-single",
+  "configReadable": true,
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "findings": [],
+  "schema": "skillscope.codex-poc-result/v1",
+  "skills": [
+    {
+      "aliases": [],
+      "canonicalPath": "repo/.agents/skills/deploy/SKILL.md",
+      "canonicalPathHash": "ad444cf0fb1d5e588213c414bdc3f0410d365b256af5fdbeab8552cede7c7113",
+      "contentSha256": "a82b9e0506a516f655781112e5d63d5b7de11a0eb88a57df2915375581d9d113",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "deploy",
+      "instanceId": "codex:repo:repo/.agents/skills/deploy/SKILL.md",
+      "logicalName": "deploy",
+      "manifestName": "deploy",
+      "relativePath": ".agents/skills/deploy/SKILL.md",
+      "sourceRootId": "repo",
+      "sourceScope": "REPO",
+      "status": "ELIGIBLE"
+    },
+    {
+      "aliases": [],
+      "canonicalPath": "home/.agents/skills/personal/SKILL.md",
+      "canonicalPathHash": "12afb9922219f479c77808c31fb31f09e809c1085c51a638afc7dc9adc857191",
+      "contentSha256": "a607ba82d6796caf79d559f775962da46ed655880701332e265c3dd104690687",
+      "evidenceLevel": "STATIC_RULE",
+      "folderName": "personal",
+      "instanceId": "codex:user:home/.agents/skills/personal/SKILL.md",
+      "logicalName": "personal",
+      "manifestName": "personal",
+      "relativePath": ".agents/skills/personal/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "status": "DISABLED"
+    }
+  ],
+  "status": "PASS",
+  "unknownSources": []
+}

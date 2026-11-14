@@ -1,0 +1,25 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o10-disabled-plugin-ids",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "plugin",
+        "name": "sites",
+        "path": "./plugin/sites",
+        "pluginId": "openai-curated-remote"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1",
+    "disabledPluginIds": [
+      "openai-curated-remote"
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "skillscope.e2e/v1",
+  "generated_utc": "2026-11-13T21:38:49.806Z",
+  "checks": [
+    {
+      "name": "codex-fail: json exit 1 (expected 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: html exit 1 (expected 1)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: report status FAIL (expected FAIL)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: JSON validates against skillscope.report/v1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: audit_sha256 present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: embedded JSON byte-identical to canonical JSON report",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: HTML external resources 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "codex-fail: HTML contains the status meaning text",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: json exit 0 (expected 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: html exit 0 (expected 0)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: report status PASS (expected PASS)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: JSON validates against skillscope.report/v1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: audit_sha256 present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: embedded JSON byte-identical to canonical JSON report",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: HTML external resources 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "claude-pass: HTML contains the status meaning text",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: json exit 2 (expected 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: html exit 2 (expected 2)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: report status INCOMPLETE (expected INCOMPLETE)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: JSON validates against skillscope.report/v1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: audit_sha256 present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: embedded JSON byte-identical to canonical JSON report",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: HTML external resources 0",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "openmausbot-incomplete: HTML contains the status meaning text",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "determinism: codex-fail audited twice → identical JSON bytes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "verify --fixtures s0 exits 0 (S0 gate still green)",
+      "status": "PASS",
+      "detail": "exit 0"
+    },
+    {
+      "name": "screenshot codex-fail HTML report",
+      "status": "PASS",
+      "detail": "ok: /home/hatch/workspace/p023-skillscope/03_evidence/T012/e2e-codex-fail.png (136209 bytes)"
+    },
+    {
+      "name": "fixture trees byte-identical before/after (0 source writes)",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "verdict": "PASS",
+  "failures": []
+}

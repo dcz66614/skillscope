@@ -1,0 +1,72 @@
+{
+  "schema": "skillscope.codex-poc-result/v1",
+  "caseId": "c02-user-admin-system",
+  "status": "PASS",
+  "skills": [
+    {
+      "instanceId": "codex:user:home/.agents/skills/personal/SKILL.md",
+      "sourceRootId": "user",
+      "sourceScope": "USER",
+      "relativePath": ".agents/skills/personal/SKILL.md",
+      "canonicalPath": "home/.agents/skills/personal/SKILL.md",
+      "logicalName": "personal",
+      "folderName": "personal",
+      "manifestName": "personal",
+      "contentSha256": "894192a4d4c7fc533a4d364a7cc5dd416f3493c94a5ab7de3a5c2df73d419e84",
+      "canonicalPathHash": "12afb9922219f479c77808c31fb31f09e809c1085c51a638afc7dc9adc857191",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:admin:etc-codex/skills/org-wide/SKILL.md",
+      "sourceRootId": "admin",
+      "sourceScope": "ADMIN",
+      "relativePath": "skills/org-wide/SKILL.md",
+      "canonicalPath": "etc-codex/skills/org-wide/SKILL.md",
+      "logicalName": "org-wide",
+      "folderName": "org-wide",
+      "manifestName": "org-wide",
+      "contentSha256": "646f795f17ecda4c99214674e17a9f7be4906616f02d7ef2e0a2cbdf8ce9d882",
+      "canonicalPathHash": "2594342a58baa8d58e38ee0dc1ceb08c6fa02d87c76f897b75e1a3eacfeb72cc",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:system:bundled/docx/SKILL.md",
+      "sourceRootId": "system",
+      "sourceScope": "SYSTEM",
+      "relativePath": "bundled/docx/SKILL.md",
+      "canonicalPath": "bundled/docx/SKILL.md",
+      "logicalName": "docx",
+      "folderName": "docx",
+      "contentSha256": "d52c521244c4e5ddbe4fbb6dbfa097afec5850f8373de1a189b07108e248810a",
+      "canonicalPathHash": "235cadb495dbefe3bd9037cd1adc9440e6cd05453fc10e1017140b54a5ff554e",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    },
+    {
+      "instanceId": "codex:system:bundled/pdf/SKILL.md",
+      "sourceRootId": "system",
+      "sourceScope": "SYSTEM",
+      "relativePath": "bundled/pdf/SKILL.md",
+      "canonicalPath": "bundled/pdf/SKILL.md",
+      "logicalName": "pdf",
+      "folderName": "pdf",
+      "contentSha256": "8113e55dd6cde62712d383e4dbe28d8240d94b5bef4791143716d74cde726100",
+      "canonicalPathHash": "ca86f13a5c8ed51e6a4795853fb7c15f27f7ff0e31c24f1e77eb1a0af28b0b4e",
+      "status": "ELIGIBLE",
+      "aliases": [],
+      "evidenceLevel": "STATIC_RULE"
+    }
+  ],
+  "findings": [],
+  "coverage": {
+    "enumeratedSources": 5,
+    "requiredSources": 5
+  },
+  "unknownSources": [],
+  "configReadable": true
+}

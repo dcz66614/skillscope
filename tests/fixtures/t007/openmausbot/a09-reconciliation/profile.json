@@ -1,0 +1,15 @@
+{
+  "profileId": "a09-reconciliation",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "emptyLists": ["imported", "plugin"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" },
+      { "kind": "library", "name": "every-docs", "path": "./library/every-docs" }
+    ]
+  },
+  "scanRoots": [{ "scope": "SHARED_LIBRARY", "path": "./library" }]
+}

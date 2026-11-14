@@ -1,0 +1,26 @@
+{
+  "coverage": {
+    "enumeratedSources": 3,
+    "requiredSources": 3,
+    "unknownScopes": []
+  },
+  "findings": [],
+  "instances": [
+    {
+      "logicalName": "ent-admin",
+      "sourceScope": "ENTERPRISE",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "my-notes",
+      "sourceScope": "PERSONAL",
+      "status": "ELIGIBLE"
+    },
+    {
+      "logicalName": "release",
+      "sourceScope": "PROJECT",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,30 @@
+{
+  "coverage": {
+    "enumeratedSources": 1,
+    "requiredSources": 2,
+    "unknownScopes": [
+      "CONFIG"
+    ]
+  },
+  "findings": [
+    "FAIL_OPEN_CONFIG"
+  ],
+  "flags": {
+    "claudeUserSkills": false,
+    "configSource": "invalid",
+    "skillsLibrary": false
+  },
+  "instances": [
+    {
+      "logicalName": "every-docs",
+      "sourceScope": "SHARED_LIBRARY",
+      "status": "DISCOVERED"
+    },
+    {
+      "logicalName": "release",
+      "sourceScope": "BOT_ASSIGNED",
+      "status": "ELIGIBLE"
+    }
+  ],
+  "status": "INCOMPLETE"
+}

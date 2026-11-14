@@ -1,0 +1,52 @@
+
+> skillscope@0.1.0 release:build
+> node ./scripts/release-build.mjs
+
+release:build started 2026-11-13T21:27:49.639Z
+frozen commit: f6b35a8a5fc7f0e801e223fafe737fa6996eaaff (pinned by existing manifest)
+[PASS] frozen commit exists in git
+[PASS] tracked tree clean at freeze
+[PASS] working tree matches frozen commit (except release/, T014 report, freeze-outcome bookkeeping)
+[PASS] frozen S0 gate status PASS — status PASS
+[PASS] frozen S0 gate hash is the known value — a11d2a4c45e338afe67b59b064604b0d80b139bd8006802747faaf4af92bf1ca
+[PASS] frozen T013 review P0=0 — P0=0
+[PASS] frozen T013 review P1=0 — P1=0
+frozen T013 review: P0=0 P1=0 P2=10 (non-blocking)
+[PASS] MIT LICENSE exists in frozen commit with the canonical content hash — LICENSE present: true, sha256 50b8b302ffcb53aec1866ad4b94721c200400e6aac8cee12db03b85f24e39ed2
+[PASS] release scripts exist in frozen commit
+[PASS] no empty directory without .gitkeep (git archive drops empty dirs)
+[PASS] git archive frozen commit → source.zip
+[PASS] source.zip non-empty — 2886320 bytes
+[PASS] file list covers every frozen-commit file — 848 files
+[PASS] file list sizes match git ls-tree sizes
+[PASS] npm run build (fresh)
+[PASS] dist.zip entries include CLI bin
+[PASS] dist.zip entries include package files
+[PASS] dist.zip entries include runtime schemas (CLI reads them via REPO_ROOT)
+[PASS] dist.zip non-empty — 513226 bytes, 41 entries
+[PASS] dist.zip contains MIT LICENSE with the canonical content hash — sha256 50b8b302ffcb53aec1866ad4b94721c200400e6aac8cee12db03b85f24e39ed2
+[PASS] dist package.json claims "license": "MIT" — license MIT
+[PASS] dist README License section states MIT (no Pending Sam claim) — ## License
+
+MIT — see [LICENSE](LICENSE) (Copyright (c) 2026 dcz66614).
+[PASS] dist.zip contains the docs/ files the README links
+[PASS] extract source.zip to clean dir
+[PASS] clean tree has package.json + src + tests
+[PASS] all 51 .gitkeep directories present in clean tree
+[PASS] MIT LICENSE present in extracted source tree
+[PASS] no node_modules/.git/dist/release in source.zip
+[PASS] clean-room npm run build (linked node_modules)
+[PASS] clean-room smoke audit exits 1 (codex-fail) — exit 1; 
+[PASS] repo smoke audit exits 1 (codex-fail) — exit 1
+[PASS] clean-room audit_sha256 == repo audit_sha256 (path-independent redaction) — clean 948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce vs repo 948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce
+[PASS] extract dist.zip to temp dir
+[PASS] dist.zip smoke audit exits 1 (codex-fail) — exit 1; 
+[PASS] dist.zip audit_sha256 == repo audit_sha256 — dist 948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce vs repo 948f94149b3a451f25c93ff2587e3f009e79ca4be0f960a964fbd95b314f9fce
+[PASS] unzip -t release/source.zip — No errors detected in compressed data of /tmp/p023-fixr3-freeze/release/source.zip. 
+[PASS] unzip -t release/dist.zip — No errors detected in compressed data of /tmp/p023-fixr3-freeze/release/dist.zip. 
+[PASS] sha256sum -c release/SHA256SUMS.txt — source.zip: OK
+dist.zip: OK
+RELEASE_MANIFEST.json: OK
+release:build PASS — frozen f6b35a8a5fc7f0e801e223fafe737fa6996eaaff
+source.zip 2886320 B sha256 850c5713778c188c350faf86e4ef2a5e58eb77eb1c426e6f5abebde1e57553c4
+dist.zip 513226 B sha256 f405795b4428d133ae6a211991938068fcf9256d3dfc47a067a4c828fbbd05a7

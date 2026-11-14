@@ -1,0 +1,16 @@
+{
+  "profileId": "a01-default-home",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "disabledPluginIds": ["openai-curated-remote"],
+    "skills": [
+      { "kind": "assigned", "name": "release", "path": "./assigned/release" },
+      { "kind": "imported", "name": "docs", "path": "./imported/docs", "importState": "active" },
+      { "kind": "plugin", "name": "sites", "path": "./plugin/sites", "pluginId": "openai-curated-remote" },
+      { "kind": "library", "name": "every-docs", "path": "./library/every-docs" }
+    ]
+  }
+}

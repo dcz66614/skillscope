@@ -1,0 +1,21 @@
+{
+  "botId": "bot-1",
+  "dataDir": "./data",
+  "profileId": "o05-optout-corrupt",
+  "snapshot": {
+    "loadableRoots": [],
+    "skills": [
+      {
+        "kind": "library",
+        "name": "every-docs",
+        "path": "./library/every-docs"
+      },
+      {
+        "kind": "assigned",
+        "name": "release",
+        "path": "./assigned/release"
+      }
+    ],
+    "version": "openmausbot-snapshot/v1"
+  }
+}

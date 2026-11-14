@@ -1,0 +1,14 @@
+{
+  "profileId": "a10-manifest",
+  "botId": "bot-1",
+  "homeDir": "./home",
+  "snapshot": {
+    "version": "openmausbot-snapshot/v1",
+    "loadableRoots": [],
+    "emptyLists": ["imported", "plugin"],
+    "skills": [
+      { "kind": "assigned", "name": "claude-helper", "path": "./assigned/claude-helper" },
+      { "kind": "assigned", "name": "dup-keys", "path": "./assigned/dup-keys" }
+    ]
+  }
+}
