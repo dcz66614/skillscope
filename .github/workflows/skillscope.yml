@@ -1,0 +1,58 @@
+# SkillScope in CI — example workflow.
+#
+# This workflow only calls the locally built CLI. It downloads nothing
+# at audit time: the checkout and the Node toolchain are the only
+# external steps, and the audit itself runs fully offline against the
+# repository's own files.
+#
+# Copy it into your repository and point the audit step at your own
+# profile file (see the commented step below). FAIL (exit 1) and
+# INCOMPLETE (exit 2) both fail the job; INCOMPLETE is never treated
+# as a pass.
+
+name: skillscope
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install (exact lockfile)
+        run: npm ci
+
+      - name: Build the local CLI
+        run: npm run build
+
+      # End-to-end smoke test: audit the repo's own synthetic PASS
+      # profile in CI mode. The single stdout line is the machine-
+      # readable result; the exit code is what fails the job.
+      - name: Audit the demo PASS profile (--ci)
+        run: node dist/cli/index.js audit --profile tests/fixtures/demo/claude-pass/profile.json --ci --format json --out skillscope.report.json
+
+      # Re-run the frozen S0 gate: 48 synthetic fixtures against the
+      # independent Python Oracle. Catches host-rule drift.
+      - name: Verify against the S0 gate
+        run: node dist/cli/index.js verify --fixtures s0
+
+      # Upload the report as a build artifact for inspection. The
+      # report is already redacted (no absolute paths, no secrets).
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: skillscope-report
+          path: skillscope.report.json
+
+      # --- Your own profile (uncomment and adjust) ---
+      # - name: Audit this repository's skills
+      #   run: node dist/cli/index.js audit --profile skillscope.json --ci
